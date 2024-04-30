@@ -8,7 +8,7 @@ const AdminObject = {
 
 const AdminSchema = new mongoose.Schema(AdminObject);
 
-const AdminModel = new mongoose.model('Admin', AdminSchema);
+const AdminModel = new mongoose.model('admin', AdminSchema);
 
 module.exports = {
   AdminObject,

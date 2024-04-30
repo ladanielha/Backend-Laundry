@@ -1,11 +1,11 @@
 const bcrypt = require("bcryptjs");
-const { AdminModel } = require("./admin.model");
 const {
   AdminNotExist,
   ValidatePassword,
   MakeJWTToken,
-} = require("./admin.service");
+} = require("../service/admin.service");
 const { ExceptionHandler } = require("../libs/lib.exception");
+const { AdminModel } = require("../model/admin.model");
 
 async function AdminCreate(req, res) {
   try {
