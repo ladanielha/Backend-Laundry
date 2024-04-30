@@ -1,14 +1,14 @@
 const express = require("express");
+const { MongoDBConnection } = require("./src/libs/lib.database");
 // const { BarangRouter } = require("./barang/barang.router");
 // const { ROUTER_BASE_BARANG } = require("./barang/barang.config");
-const { MongoDBConnection } = require("./libs/lib.database");
 // const { ROUTER_BASE_ADMIN } = require("./admin/admin.config");
 // const { UserRouter } = require("./admin/admin.router");
 // const { ROUTER_BASE_CUSTOMER } = require("./customer/customer.config");
-const { CustomerRouter } = require("./customer/customer.router");
-const { ROUTER_BASE_ORDER } = require("./order/order.config");
-const { OrderRouter } = require("./order/order.router");
-const cors = require("cors")
+// const { CustomerRouter } = require("./customer/customer.router");
+// const { ROUTER_BASE_ORDER } = require("./order/order.config");
+// const { OrderRouter } = require("./order/order.router");
+const cors = require("cors");
 const app = express();
 
 MongoDBConnection();
