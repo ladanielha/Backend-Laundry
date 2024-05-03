@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const AdminObject = {
-  username: { type: String, default: null },
+  username: { type: String, required: true },
   email: { type: String, unique: true, required: true },
   password: { type: String, required: true },
 }

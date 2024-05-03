@@ -1,10 +1,12 @@
 const {body} = require("express-validator");
 const { AdminModel } = require("../model/admin.model");
 
-
-const AdminUsernameValidator =( target="username") => {
+const AdminUsernameValidator =(optional=false, target="username") => {
     const validator = body(target);
 
+    if(optional) {
+        validator.optional
+    }
     validator.exists().withMessage("Field can't empty!").bail();
     validator.notEmpty().withMessage("Username can't be empty!").bail();
     validator

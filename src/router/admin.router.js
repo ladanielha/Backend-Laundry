@@ -5,13 +5,14 @@ const { AdminEmailValidator, AdminUsernameValidator } = require("../validations/
 const AdminRouter = express.Router();
 
 AdminRouter.post("/", [
-  AdminUsernameValidator(),
+  AdminUsernameValidator(false),
   AdminEmailValidator(),
 ], AdminCreate);
 
 AdminRouter.post("/signin", [
-  AdminEmailValidator(),
-], AdminSignIn);
+  AdminEmailValidator(false),
+],
+AdminSignIn);
 
 module.exports = {
   AdminRouter

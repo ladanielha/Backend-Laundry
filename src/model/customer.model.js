@@ -1,10 +1,10 @@
 const mongoose = require("mongoose");
 
 const CustomerObject = {
-  nomor: { type: String, unique: true },
-  nama: { type: String, required: true },
-  alamat: { type: String, required: true },
-  telepon: { type: String, required: true }
+  code: { type: String, unique: true },
+  name: { type: String, required: true },
+  phonenumber: { type: String, required: true },
+  address: { type: String, required: true }
 }
 
 const CustomerSchema = new mongoose.Schema(CustomerObject)

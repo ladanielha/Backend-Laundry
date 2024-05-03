@@ -1,5 +1,5 @@
 const { body } = require("express-validator");
-const { CustomerModel } = require("./customer.model");
+const { CustomerModel } = require("../model/customer.model");
 
 const CustomerIDValidator = (optional = false, target = "_id") => {
   const validator = body(target);
@@ -8,8 +8,8 @@ const CustomerIDValidator = (optional = false, target = "_id") => {
     validator.optional();
   }
 
-  validator.exists().withMessage("Field harus tersedia!").bail();
-  validator.notEmpty().withMessage("Field tidak boleh kosong.").bail();
+  validator.exists().withMessage("Field must be present!").bail();
+  validator.notEmpty().withMessage("Field cannot be empty.").bail();
   validator.isMongoId().withMessage("Format ID tidak valid.").bail();
   validator
     .custom(async (_id) => {
@@ -23,11 +23,11 @@ const CustomerIDValidator = (optional = false, target = "_id") => {
   return validator;
 };
 
-const CustomerNomorValidator = (
+const CustomerCodeValidator = (
   optional = false,
   forCreate = true,
   forModule = false,
-  target = "nomor"
+  target = "code"
 ) => {
   const validator = body(target);
 
@@ -35,11 +35,11 @@ const CustomerNomorValidator = (
     validator.optional();
   }
 
-  validator.exists().withMessage("Field harus tersedia!").bail();
-  validator.notEmpty().withMessage("Field tidak boleh kosong.").bail();
+  validator.exists().withMessage("Field must be present!").bail();
+  validator.notEmpty().withMessage("Field cannot be empty.").bail();
   validator
-    .isLength({ min: 6, max: 6 })
-    .withMessage("Field hanya menerima tepat 6 karakter.")
+    .isLength({ min: 7, max: 7 })
+    .withMessage("Field only accepts exactly 7 characters.")
     .bail();
 
   if (forCreate) {
@@ -67,14 +67,14 @@ const CustomerNomorValidator = (
   return validator;
 };
 
-const CustomerNamaValidator = (optional = false, target = "nama") => {
+const CustomerNameValidator = (optional = false, target = "name") => {
   const validator = body(target);
 
   if (optional) {
     validator.optional();
   }
 
-  validator.exists().withMessage("Field harus tersedia!").bail();
+  validator.exists().withMessage("Field must be present!").bail();
   validator.notEmpty().withMessage("Nama tidak boleh kosong.").bail();
   validator
     .isLength({ min: 5, max: 100 })
@@ -83,14 +83,14 @@ const CustomerNamaValidator = (optional = false, target = "nama") => {
   return validator;
 };
 
-const CustomerTeleponValidator = (optional = false, target = "telepon") => {
+const CustomerPhoneValidator = (optional = false, target = "phonenumber") => {
   const validator = body(target);
 
   if (optional) {
     validator.optional();
   }
 
-  validator.exists().withMessage("Field harus tersedia!").bail();
+  validator.exists().withMessage("Field must be present!").bail();
   validator.notEmpty().withMessage("Telepon tidak boleh kosong.").bail();
   validator
     .isLength({ min: 11, max: 13 })
@@ -99,14 +99,14 @@ const CustomerTeleponValidator = (optional = false, target = "telepon") => {
   return validator;
 };
 
-const CustomerAlamatValidator = (optional = false, target = "alamat") => {
+const CustomerAddressValidator = (optional = false, target = "address") => {
   const validator = body(target);
 
   if (optional) {
     validator.optional();
   }
 
-  validator.exists().withMessage("Field harus tersedia!").bail();
+  validator.exists().withMessage("Field must be present!").bail();
   validator.notEmpty().withMessage("Alamat tidak boleh kosong.").bail();
   validator
     .isLength({ min: 10, max: 150 })
@@ -117,8 +117,8 @@ const CustomerAlamatValidator = (optional = false, target = "alamat") => {
 
 module.exports = {
   CustomerIDValidator,
-  CustomerNamaValidator,
-  CustomerAlamatValidator,
-  CustomerNomorValidator,
-  CustomerTeleponValidator,
+  CustomerNameValidator,
+  CustomerAddressValidator,
+  CustomerCodeValidator,
+  CustomerPhoneValidator,
 };

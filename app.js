@@ -4,8 +4,9 @@ const { MongoDBConnection } = require("./src/libs/lib.database");
 // const { ROUTER_BASE_BARANG } = require("./barang/barang.config");
 const { AdminRouter } = require("./src/router/admin.router");
 const { ROUTER_BASE_ADMIN } = require("./src/config/admin.config");
-// const { ROUTER_BASE_CUSTOMER } = require("./customer/customer.config");
-// const { CustomerRouter } = require("./customer/customer.router");
+const { ROUTER_BASE_CUSTOMER } = require("./src/config/customer.config");
+const { CustomerRouter } = require("./src/router/customer.router");
+
 // const { ROUTER_BASE_ORDER } = require("./order/order.config");
 // const { OrderRouter } = require("./order/order.router");
 const cors = require("cors");
@@ -20,7 +21,7 @@ app.use(cors({
 
 // app.use(ROUTER_BASE_BARANG, BarangRouter);
 app.use(ROUTER_BASE_ADMIN, AdminRouter);
-// app.use(ROUTER_BASE_CUSTOMER, CustomerRouter);
+app.use(ROUTER_BASE_CUSTOMER, CustomerRouter);
 // app.use(ROUTER_BASE_ORDER, OrderRouter)
 
 
