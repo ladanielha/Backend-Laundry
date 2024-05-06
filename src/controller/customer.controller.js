@@ -13,6 +13,7 @@ async function CustomerList(req, res) {
     return ExceptionHandler(error, res)
   }
 }
+
 async function CustomerCreate(req, res) {
   try {
     const result = await CustomerModel.create(req.cleanedData)
