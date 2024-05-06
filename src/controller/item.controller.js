@@ -22,6 +22,7 @@ async function ItemList(req, res) {
 async function ItemCreate(req, res) {
   try {
     const result = await ItemModel.create(req.body);
+    console.log(result);
     return res.status(201).json(result);
   } catch (error) {
     console.log(error);

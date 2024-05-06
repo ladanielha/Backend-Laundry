@@ -21,7 +21,6 @@ app.use(cors({
   origin:"*"
 }));
 
-// app.use(ROUTER_BASE_BARANG, BarangRouter);
 app.use(ROUTER_BASE_ADMIN, AdminRouter);
 app.use(ROUTER_BASE_CUSTOMER, CustomerRouter);
 app.use(ROUTER_BASE_SERVICE, ServiceRouter);
