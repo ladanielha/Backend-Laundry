@@ -9,7 +9,7 @@ const ItemObject = {
   modifiedAt: { type: Date },
 }
 
-const ItemSchema = new mongoose.Schema(ItemObject)
+const ItemSchema = new mongoose.Schema(ItemObject, { timestamps: true });
 
 const ItemModel = mongoose.model("Item", ItemSchema);
 

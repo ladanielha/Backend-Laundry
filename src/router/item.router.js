@@ -28,8 +28,6 @@ ItemRouter.post(
       ItemNameValidator(false),
       ItemServiceValidator(false),
       ItemPriceValidator(false),
-      CreatedAtValidator(false),
-      ModifiedAtValidator(false),
     ]),
   ],
   ItemCreate
@@ -44,8 +42,6 @@ ItemRouter.put(
       ItemNameValidator(true),
       ItemServiceValidator(true),
       ItemPriceValidator(true),
-      CreatedAtValidator(true),
-      ModifiedAtValidator(true),
     ]),
   ],
   ItemUpdate

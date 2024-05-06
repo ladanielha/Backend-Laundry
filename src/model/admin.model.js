@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+  const mongoose = require("mongoose");
 
 const AdminObject = {
   username: { type: String, required: true },
@@ -8,7 +8,7 @@ const AdminObject = {
   modifiedAt: { type: Date },
 }
 
-const AdminSchema = new mongoose.Schema(AdminObject);
+const AdminSchema = new mongoose.Schema(AdminObject, { timestamps: true });
 
 const AdminModel = new mongoose.model('admin', AdminSchema);
 

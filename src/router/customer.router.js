@@ -12,9 +12,8 @@ CustomerRouter.post('/', [
   Validate([
     CustomerCodeValidator(false, true, false),
     CustomerNameValidator(false),
-    CustomerPhoneValidator(false),
-    CreatedAtValidator(false),
-    ModifiedAtValidator(false)
+    CustomerPhoneValidator(false)
+
   ])
 ], CustomerCreate)
 CustomerRouter.get("/:id", [IsAuthenticated], CustomerDetail)
@@ -24,9 +23,7 @@ CustomerRouter.put("/:id", [
   Validate([
     CustomerCodeValidator(true, false, false),
     CustomerNameValidator(true),
-    CustomerPhoneValidator(true),
-    CreatedAtValidator(true),
-    ModifiedAtValidator(true)
+    CustomerPhoneValidator(true)
   ])
 ], CustomerUpdate)
 CustomerRouter.delete('/:id', [IsAuthenticated], CustomerDelete)

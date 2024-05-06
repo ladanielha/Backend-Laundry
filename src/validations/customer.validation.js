@@ -77,8 +77,8 @@ const CustomerNameValidator = (optional = false, target = "name") => {
   validator.exists().withMessage("Field must be present!").bail();
   validator.notEmpty().withMessage("Nama tidak boleh kosong.").bail();
   validator
-    .isLength({ min: 5, max: 100 })
-    .withMessage("Nama tidak boleh kurang dari 5 dan lebih dari 100")
+    .isLength({ min: 3, max: 100 })
+    .withMessage("Nama tidak boleh kurang dari 3 dan lebih dari 100")
     .bail();
   return validator;
 };
