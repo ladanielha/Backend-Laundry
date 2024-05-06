@@ -1,5 +1,5 @@
-const ROUTER_BASE_SERVICE = "/admin";
+const ROUTER_BASE_SERVICE = "/service";
 
 module.exports = {
-  ROUTER_BASE_SERVICE
-}
+  ROUTER_BASE_SERVICE,
+};
