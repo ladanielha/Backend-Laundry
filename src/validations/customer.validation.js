@@ -44,8 +44,8 @@ const CustomerCodeValidator = (
 
   if (forCreate) {
     validator
-      .custom(async (nomor) => {
-        const customer = await CustomerModel.findOne({ nomor });
+      .custom(async (code) => {
+        const customer = await CustomerModel.findOne({ code });
         if (customer) {
           throw new Error("Nomor sudah digunakan");
         }

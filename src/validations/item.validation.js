@@ -1,6 +1,7 @@
 const { body } = require("express-validator");
 const { ItemModel } = require("../model/item.model");
-const { model } = require("mongoose");
+
+
 
 const ItemCodeValidator = (
   optional = false,
@@ -24,8 +25,8 @@ const ItemCodeValidator = (
   if (forCreate) {
     validator
       .custom(async (code) => {
-        const customer = await ItemModel.findOne({ code });
-        if (customer) {
+        const item = await ItemModel.findOne({ code });
+        if (item) {
           throw new Error("Code already exist");
         }
       })
@@ -35,8 +36,8 @@ const ItemCodeValidator = (
   if (forModule) {
     validator
       .custom(async (code) => {
-        const customer = await ItemModel.findOne({ code });
-        if (!customer) {
+        const item = await ItemModel.findOne({ code });
+        if (!item) {
           throw new Error("Code has not been registered in the database");
         }
       })

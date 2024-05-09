@@ -12,8 +12,6 @@ const {
   ItemNameValidator,
   ItemServiceValidator,
   ItemPriceValidator,
-  CreatedAtValidator,
-  ModifiedAtValidator,
 } = require("../validations/item.validation");
 
 const ItemRouter = express.Router();
