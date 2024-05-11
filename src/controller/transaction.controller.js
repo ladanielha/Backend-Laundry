@@ -22,6 +22,9 @@ async function TransactionList(req, res) {
   
   async function TransactionCreate(req, res) {
     try {
+      const TransactionCount = await TransactionModel.countDocuments();
+      const nextTransactionCode = generateTransactionCode(TransactionCount + 1);
+      req.body.code = nextTransactionCode;
       const result = await TransactionModel.create(req.body);
       return res.status(201).json(result);
     } catch (error) {
@@ -77,6 +80,12 @@ async function TransactionList(req, res) {
       return ExceptionHandler(error, res);
     }
   }
+
+// Function to generate the item code
+function generateTransactionCode(count) {
+  const paddedCount = count.toString().padStart(3, '0');
+  return `INV-${paddedCount}`;
+}
   
   module.exports = {
     TransactionList,

@@ -21,6 +21,10 @@ async function ItemList(req, res) {
 
 async function ItemCreate(req, res) {
   try {
+    // Count Nilai 
+    const itemCount = await ItemModel.countDocuments();
+    const nextItemCode = generateItemCode(itemCount + 1);
+    req.body.code = nextItemCode;
     const result = await ItemModel.create(req.body);
     console.log(result);
     return res.status(201).json(result);
@@ -61,6 +65,12 @@ async function ItemDelete(req, res) {
   } catch (error) {
     return ExceptionHandler(error, res);
   }
+}
+
+// Function to generate the item code
+function generateItemCode(count) {
+  const paddedCount = count.toString().padStart(3, '0');
+  return `ITM-${paddedCount}`;
 }
 
 module.exports = {
