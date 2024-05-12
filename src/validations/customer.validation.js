@@ -96,6 +96,13 @@ const CustomerPhoneValidator = (optional = false, target = "phonenumber") => {
     .isLength({ min: 11, max: 13 })
     .withMessage("Nomor telepon minimal 11 karakter dan maksimal 13 karakter")
     .bail();
+  validator.custom(async (code) => {
+      const customer = await CustomerModel.findOne({ code });
+      if (customer) {
+        throw new Error("Nomor sudah digunakan");
+      }
+    })
+    .bail();
   return validator;
 };
 
