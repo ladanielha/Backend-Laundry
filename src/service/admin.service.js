@@ -25,7 +25,7 @@ const MakeJWTToken =  (payload) => {
   const token = jwt.sign(
     payload, 
     process.env.TOKEN_KEY,
-    { expiresIn: "2h" }
+    { expiresIn: "24h" }
   )
 
   return token;

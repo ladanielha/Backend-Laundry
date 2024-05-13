@@ -5,7 +5,7 @@ const { CustomerModel } = require("../model/customer.model");
 async function CustomerList(req, res) {
   try {
     const result = CustomerModel.find();
-    const search = SearchBackend(req, result, ['code', 'name', 'phonenumber','address']);
+    const search = SearchBackend(req, result, ['code', 'name', 'phonenumber']);
     const filter = FilterBackend(req, search);
     const paging = await Pagination(req, res, filter);
     return res.status(200).json(paging)
