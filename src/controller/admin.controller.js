@@ -31,7 +31,6 @@ async function AdminCreate(req, res) {
   }
 }
 
-
 async function AdminSignIn(req, res) {
   try {
     // Check Admin service not exist
@@ -45,7 +44,7 @@ async function AdminSignIn(req, res) {
     // Make Token JWT
     const token = MakeJWTToken(payload);
     // Return Response
-    return res.status(200).json({ token });
+    return res.status(200).json({ token, payload });
   } catch (error) {
     console.log(error);
     return ExceptionHandler(error, res);
