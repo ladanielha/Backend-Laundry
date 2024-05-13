@@ -18,7 +18,6 @@ TransactionRouter.post(
   [
     IsAuthenticated,
     Validate([
-      TransactionCodeValidator(),
       TransactionTotalPriceValidator(),
       TransactionCustomerValidator(),
       TransactionItemsValidator(),

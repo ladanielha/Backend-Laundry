@@ -21,9 +21,21 @@ async function ItemList(req, res) {
 
 async function ItemCreate(req, res) {
   try {
-    // Count Nilai 
-    const itemCount = await ItemModel.countDocuments();
-    const nextItemCode = generateItemCode(itemCount + 1);
+    // Count Nilai
+    const lastItem = await ItemModel.findOne(
+      {},
+      {},
+      { sort: { createdAt: -1 } }
+    );
+    let lastItemNumber = 0;
+    if (lastItem) {
+      const lastItemCodeParts = lastItem.code.split("-");
+      lastItemNumber = parseInt(lastItemCodeParts[1]);
+    }
+    // Generate the next Item number
+    const nextItemNumber = lastItemNumber + 1;
+    const nextItemCode = generateItemCode(nextItemNumber);
+    // Add the code to the request body
     req.body.code = nextItemCode;
     const result = await ItemModel.create(req.body);
     console.log(result);
@@ -69,14 +81,14 @@ async function ItemDelete(req, res) {
 
 // Function to generate the item code
 function generateItemCode(count) {
-  const paddedCount = count.toString().padStart(3, '0');
+  const paddedCount = count.toString().padStart(3, "0");
   return `ITM-${paddedCount}`;
 }
 
 module.exports = {
-    ItemList,
-    ItemCreate,
-    ItemDetail,
-    ItemUpdate,
-    ItemDelete
-}
+  ItemList,
+  ItemCreate,
+  ItemDetail,
+  ItemUpdate,
+  ItemDelete,
+};

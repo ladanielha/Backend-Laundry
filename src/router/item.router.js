@@ -8,7 +8,6 @@ const {
   ItemDelete,
 } = require("../controller/item.controller");
 const {
-  ItemCodeValidator,
   ItemNameValidator,
   ItemServiceValidator,
   ItemPriceValidator,
@@ -22,7 +21,6 @@ ItemRouter.post(
   [
     IsAuthenticated,
     Validate([
-      ItemCodeValidator(false, true, false),
       ItemNameValidator(false),
       ItemServiceValidator(false),
       ItemPriceValidator(false),
@@ -36,7 +34,6 @@ ItemRouter.put(
   [
     IsAuthenticated,
     Validate([
-      ItemCodeValidator(true, false, false),
       ItemNameValidator(true),
       ItemServiceValidator(true),
       ItemPriceValidator(true),
