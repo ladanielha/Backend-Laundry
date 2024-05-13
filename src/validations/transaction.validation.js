@@ -2,27 +2,40 @@ const { body } = require("express-validator");
 const { TransactionModel } = require("../model/transaction.model");
 
 
-const OrderNomorValidator = (target="nomor") => {
+const TransactionCodeValidator = (target="code") => {
   return body(target)
   .exists()
-  .withMessage("Field harus tersedia!")
+  .withMessage("Field must be present!")
   .bail()
   .notEmpty()
-  .withMessage("Field tidak boleh kosong.")
+  .withMessage("Field cannot be empty.")
   .bail()
-  .isLength({ min: 6, max: 6 })
-  .withMessage("Field hanya menerima tepat 6 karakter.")
+  .isLength({ min: 7, max: 10 })
+  .withMessage("Field only accepts exactly 7 characters")
   .bail()
-  .custom(async (nomor) => {
-    const order = await OrderModel.findOne({nomor});
+  .custom(async (code) => {
+    const order = await TransactionModel.findOne({code});
     if (order) {
-      throw new Error("Nomor sudah digunakan")
+      throw new Error("Code alrady exist")
     }
   })
   .bail()
 }
 
-const OrderCustomerValidator = (target="customer") => {
+const TransactionTotalPriceValidator = (target="totalPrice") => {
+  return body(target)
+    .exists()
+    .withMessage("Field harus tersedia!")
+    .bail()
+    .notEmpty()
+    .withMessage("Field tidak boleh kosong.")
+    .bail()
+    .isInt()
+    .withMessage("Field harus bilangan bulat.")
+    .bail()
+}
+
+const TransactionCustomerValidator = (target="customer") => {
   return body(target)
     .exists()
     .withMessage("Field harus tersedia!")
@@ -35,7 +48,7 @@ const OrderCustomerValidator = (target="customer") => {
     .bail()
 }
 
-const OrderTanggalValidator = (target="tanggal") => {
+const TransactionItemsValidator = (target="item") => {
   return body(target)
     .exists()
     .withMessage("Field harus tersedia!")
@@ -43,84 +56,15 @@ const OrderTanggalValidator = (target="tanggal") => {
     .notEmpty()
     .withMessage("Field tidak boleh kosong.")
     .bail()
-    .isDate({format: "YYYY-MM-DD"})
-    .withMessage("Format harus YYYY-MM-DD")
-    .bail()
-}
-
-const OrderDibayarValidator = (target="dibayar") => {
-  return body(target)
-    .exists()
-    .withMessage("Field harus tersedia!")
-    .bail()
-    .notEmpty()
-    .withMessage("Field tidak boleh kosong.")
-    .bail()
-    .isInt()
-    .withMessage("Field harus bilangan bulat.")
-    .bail()
-}
-
-const OrderTotalValidator = (target="total") => {
-  return body(target)
-    .exists()
-    .withMessage("Field harus tersedia!")
-    .bail()
-    .notEmpty()
-    .withMessage("Field tidak boleh kosong.")
-    .bail()
-    .isInt()
-    .withMessage("Field harus bilangan bulat.")
-    .bail()
-}
-
-const OrderItemsValidator = (target="items") => {
-  return body(target)
-    .exists()
-    .withMessage("Field harus tersedia!")
-    .bail()
-    .notEmpty()
-    .withMessage("Field tidak boleh kosong.")
-    .bail()
-    .isArray({min: 1})
-    .withMessage("Minimal memiliki 1 item di dalamnya.")
-    .bail()
-}
-
-const OrderItemsQtyValidator = (target="items.*.qty") => {
-  return body(target)
-    .exists()
-    .withMessage("Field harus tersedia!")
-    .bail()
-    .notEmpty()
-    .withMessage("Field tidak boleh kosong.")
-    .bail()
-    .isInt({min: 1})
-    .withMessage("Field harus bilangan bulat dan minimal qty pembelian sebesar 1.")
-    .bail()
-}
-
-const OrderItemsSubtotalValidator = (target="items.*.subtotal") => {
-  return body(target)
-    .exists()
-    .withMessage("Field harus tersedia!")
-    .bail()
-    .notEmpty()
-    .withMessage("Field tidak boleh kosong.")
-    .bail()
-    .isInt({min: 1})
-    .withMessage("Field harus bilangan bulat.")
-    .bail()
+    // .isArray({min: 1})
+    // .withMessage("Minimal memiliki 1 item di dalamnya.")
+    // .bail()
 }
 
 
 module.exports = {
-  OrderNomorValidator,
-  OrderCustomerValidator,
-  OrderTanggalValidator,
-  OrderDibayarValidator,
-  OrderTotalValidator,
-  OrderItemsValidator,
-  OrderItemsQtyValidator,
-  OrderItemsSubtotalValidator,
+  TransactionCodeValidator,
+  TransactionCustomerValidator,
+  TransactionItemsValidator,
+  TransactionTotalPriceValidator,
 }

@@ -30,11 +30,11 @@ const ExceptionHandler = (error, res) => {
   console.log(error)
   switch (error.name) {
     case "MongoServerError":
-      return res.status(400).json({ detail: "Data already exist please check code number!" })
+      return res.status(400).json({ detail: "Data already exist please check the data again!" })
     case "CastError":
-      return res.status(500).json({detail: error.message || "Pastikan format id benar"})
+      return res.status(500).json({detail: error.message || "Please check the id must be true"})
     case "ValidationError":
-      return res.status(400).json({detail: error.message || "Pastikan data lengkap dan sesuai"})
+      return res.status(400).json({detail: error.message || "Please check the input format "})
     case "Error404":    
       return res.status(404).json({detail: error.message || "Data not found"});
     case "Error401":
