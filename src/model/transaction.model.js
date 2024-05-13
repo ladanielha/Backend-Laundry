@@ -10,14 +10,13 @@ const TransactionObject = {
     ...CustomerObject,
     code: { type: String, required: true },
   }),
-  item: [
+  item:
     new mongoose.Schema({
       ...ItemObject,
       code: { type: String, required: true },
       service: { type: String, required: true },
       price: { type: Number, required: true },
     }),
-  ],
   admin: new mongoose.Schema({
     username: { type: String, required: true },
   }),

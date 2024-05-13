@@ -94,7 +94,7 @@ async function TransactionDelete(req, res) {
 // Function to generate the item code
 function generateTransactionCode(count) {
   const paddedCount = count.toString().padStart(3, "0");
-  return `INV-${paddedCount}`;
+  return `TRX-${paddedCount}`;
 }
 
 module.exports = {
