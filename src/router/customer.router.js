@@ -11,7 +11,6 @@ CustomerRouter.post('/', [
   Validate([
     CustomerNameValidator(false),
     CustomerPhoneValidator(false)
-
   ])
 ], CustomerCreate)
 CustomerRouter.get("/:id", [IsAuthenticated], CustomerDetail)

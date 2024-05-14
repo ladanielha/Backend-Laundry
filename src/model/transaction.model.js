@@ -6,11 +6,12 @@ const { AdminObject } = require("./admin.model");
 const TransactionObject = {
   code: { type: String, require: true, unique: true },
   totalPrice: { type: Number, required: true },
-  customer: new mongoose.Schema({
+  customers: new mongoose.Schema({
     ...CustomerObject,
     code: { type: String, required: true },
+    phonenumber: { type: String, required: true },
   }),
-  item:
+  items:
     new mongoose.Schema({
       ...ItemObject,
       code: { type: String, required: true },

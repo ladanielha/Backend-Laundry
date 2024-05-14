@@ -25,36 +25,36 @@ const TransactionCodeValidator = (target="code") => {
 const TransactionTotalPriceValidator = (target="totalPrice") => {
   return body(target)
     .exists()
-    .withMessage("Field harus tersedia!")
+    .withMessage("Field totalPrice harus tersedia!")
     .bail()
     .notEmpty()
-    .withMessage("Field tidak boleh kosong.")
+    .withMessage("Field  totalPrice tidak boleh kosong.")
     .bail()
     .isInt()
-    .withMessage("Field harus bilangan bulat.")
+    .withMessage("Field totalPrice harus bilangan bulat.")
     .bail()
 }
 
-const TransactionCustomerValidator = (target="customer") => {
+const TransactionCustomerValidator = (target="customers") => {
   return body(target)
     .exists()
-    .withMessage("Field harus tersedia!")
+    .withMessage("Field customers harus tersedia!")
     .bail()
     .notEmpty()
-    .withMessage("Field tidak boleh kosong.")
+    .withMessage("Field customers tidak boleh kosong.")
     .bail()
     .isObject()
-    .withMessage("Format tidak valid.")
+    .withMessage("Format customers tidak valid.")
     .bail()
 }
 
-const TransactionItemsValidator = (target="item") => {
+const TransactionItemsValidator = (target="items") => {
   return body(target)
     .exists()
-    .withMessage("Field harus tersedia!")
+    .withMessage("Field Item harus tersedia!")
     .bail()
     .notEmpty()
-    .withMessage("Field tidak boleh kosong.")
+    .withMessage("Field Item tidak boleh kosong.")
     .bail()
     // .isArray({min: 1})
     // .withMessage("Minimal memiliki 1 item di dalamnya.")

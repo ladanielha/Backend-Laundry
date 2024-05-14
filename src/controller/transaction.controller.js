@@ -10,7 +10,7 @@ const { TransactionModel } = require("../model/transaction.model");
 async function TransactionList(req, res) {
   try {
     const result = TransactionModel.find();
-    const search = SearchBackend(req, result, ["code"]);
+    const search = SearchBackend(req, result, ["code", "customers.name"]);
     const filter = FilterBackend(req, search);
     const paging = await Pagination(req, res, filter);
     return res.status(200).json(paging);
@@ -35,6 +35,7 @@ async function TransactionCreate(req, res) {
     const nextTransactionNumber = lastTransactionNumber + 1;
     const nextTransactionCode = generateTransactionCode(nextTransactionNumber);
     req.body.code = nextTransactionCode;
+    console.log(res.body)
     const result = await TransactionModel.create(req.body);
     return res.status(201).json(result);
   } catch (error) {
