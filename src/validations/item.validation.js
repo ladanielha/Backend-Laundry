@@ -71,8 +71,8 @@ const ItemServiceValidator = (optional = false, target = "service") => {
     validator.optional();
   }
 
-  validator.exists().withMessage("Price must be present").bail();
-  validator.notEmpty().withMessage("Field tidak boleh kosong.").bail();
+  validator.exists().withMessage("Service must be present").bail();
+  validator.notEmpty().withMessage("Service tidak boleh kosong.").bail();
   validator
     .isLength({ min: 3, max: 100 })
     .withMessage("Nama tidak boleh kurang dari 3 dan lebih dari 100 karakter")

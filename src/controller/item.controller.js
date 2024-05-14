@@ -10,7 +10,7 @@ const { ItemModel } = require("../model/item.model");
 async function ItemList(req, res) {
   try {
     const result = ItemModel.find();
-    const search = SearchBackend(req, result, ["code", "name"]);
+    const search = SearchBackend(req, result, ["code", "name", "service"]);
     const filter = FilterBackend(req, search);
     const paging = await Pagination(req, res, filter);
     return res.status(200).json(paging);
