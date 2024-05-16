@@ -489,3 +489,23 @@
 2024-05-16 18:20:31:2031 [31merror[39m: [31mEmail tidak terdaftar.[39m
 2024-05-16 18:20:37:2037 [31merror[39m: [31mEmail tidak terdaftar.[39m
 2024-05-16 18:22:49:2249 [31merror[39m: [31mEmail tidak terdaftar.[39m
+2024-05-16 19:06:17:617 [31merror[39m: [31mE11000 duplicate key error collection: laundryv3.customers index: code_1 dup key: { code: "CUS-001" }[39m
+2024-05-16 19:06:30:630 [31merror[39m: [31mFailed to send WhatsApp message: The 'To' number whatsapp:undefined is not a valid phone number.[39m
+2024-05-16 19:06:30:630 [31merror[39m: [31mThe 'To' number whatsapp:undefined is not a valid phone number.[39m
+2024-05-16 19:06:32:632 [31merror[39m: [31mFailed to send WhatsApp message: The 'To' number whatsapp:undefined is not a valid phone number.[39m
+2024-05-16 19:06:32:632 [31merror[39m: [31mThe 'To' number whatsapp:undefined is not a valid phone number.[39m
+2024-05-16 19:10:31:1031 [31merror[39m: [31mFailed to send WhatsApp message: Twilio could not find a Channel with the specified From address[39m
+2024-05-16 19:10:31:1031 [31merror[39m: [31mTwilio could not find a Channel with the specified From address[39m
+2024-05-16 19:12:44:1244 [31merror[39m: [31mFailed to send WhatsApp message: Twilio could not find a Channel with the specified From address[39m
+2024-05-16 19:12:44:1244 [31merror[39m: [31mTwilio could not find a Channel with the specified From address[39m
+2024-05-16 19:13:38:1338 [31merror[39m: [31mFailed to send WhatsApp message: Twilio could not find a Channel with the specified From address[39m
+2024-05-16 19:13:38:1338 [31merror[39m: [31mTwilio could not find a Channel with the specified From address[39m
+2024-05-16 19:28:56:2856 [31merror[39m: [31mE11000 duplicate key error collection: laundryv3.transactions index: code_1 dup key: { code: "TRX-007" }[39m
+2024-05-16 19:30:55:3055 [31merror[39m: [31mE11000 duplicate key error collection: laundryv3.transactions index: code_1 dup key: { code: "TRX-008" }[39m
+2024-05-16 19:34:52:3452 [31merror[39m: [31mCannot read properties of undefined (reading 'service')[39m
+2024-05-16 19:34:54:3454 [31merror[39m: [31mCannot read properties of undefined (reading 'service')[39m
+2024-05-16 19:38:56:3856 [31merror[39m: [31mmoment is not defined[39m
+2024-05-16 19:38:57:3857 [31merror[39m: [31mmoment is not defined[39m
+2024-05-16 19:43:46:4346 [31merror[39m: [31morderCode is not defined[39m
+2024-05-16 19:43:48:4348 [31merror[39m: [31morderCode is not defined[39m
+2024-05-16 19:44:16:4416 [31merror[39m: [31mE11000 duplicate key error collection: laundryv3.transactions index: code_1 dup key: { code: "TRX-015" }[39m

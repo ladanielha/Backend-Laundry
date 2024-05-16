@@ -626,3 +626,331 @@
 2024-05-16 18:39:51:3951 [32minfo[39m: [32msuccess get list item[39m
 2024-05-16 18:39:51:3951 [35mhttp[39m: [35m::1 GET /item/?limit=2 304 - - 7.229 ms[39m
 [35m[39m
+2024-05-16 18:42:03:423 [32minfo[39m: [32mServer is running on port 3000[39m
+2024-05-16 18:42:03:423 [32minfo[39m: [32mBerhasil terhubung ke database mongoDB[39m
+2024-05-16 18:42:07:427 [32minfo[39m: [32msuccess get list customer[39m
+2024-05-16 18:42:07:427 [35mhttp[39m: [35m::1 GET /customer/?limit=2 304 - - 15.985 ms[39m
+[35m[39m
+2024-05-16 18:42:16:4216 [32minfo[39m: [32msuccess get list customer[39m
+2024-05-16 18:42:16:4216 [35mhttp[39m: [35m::1 GET /customer/?limit=10 200 67 - 5.482 ms[39m
+[35m[39m
+2024-05-16 18:42:20:4220 [32minfo[39m: [32msuccess get list item[39m
+2024-05-16 18:42:20:4220 [35mhttp[39m: [35m::1 GET /item/?limit=2 304 - - 10.183 ms[39m
+[35m[39m
+2024-05-16 18:42:23:4223 [32minfo[39m: [32msuccess get list item[39m
+2024-05-16 18:42:23:4223 [35mhttp[39m: [35m::1 GET /item/?limit=10 200 1422 - 5.558 ms[39m
+[35m[39m
+2024-05-16 18:42:25:4225 [32minfo[39m: [32msuccess get item detail[39m
+2024-05-16 18:42:25:4225 [35mhttp[39m: [35m::1 GET /item/664385764c0711085e0ce824 200 185 - 6.314 ms[39m
+[35m[39m
+2024-05-16 18:42:31:4231 [32minfo[39m: [32msuccess update item[39m
+2024-05-16 18:42:31:4231 [35mhttp[39m: [35m::1 PUT /item/664385764c0711085e0ce824 200 186 - 14.737 ms[39m
+[35m[39m
+2024-05-16 18:42:31:4231 [32minfo[39m: [32msuccess get list item[39m
+2024-05-16 18:42:31:4231 [35mhttp[39m: [35m::1 GET /item/?limit=2 304 - - 7.544 ms[39m
+[35m[39m
+2024-05-16 18:58:32:5832 [32minfo[39m: [32mServer is running on port 3000[39m
+2024-05-16 18:58:32:5832 [32minfo[39m: [32mBerhasil terhubung ke database mongoDB[39m
+2024-05-16 19:05:05:55 [32minfo[39m: [32mServer is running on port 3000[39m
+2024-05-16 19:05:05:55 [32minfo[39m: [32mBerhasil terhubung ke database mongoDB[39m
+2024-05-16 19:05:47:547 [32minfo[39m: [32mServer is running on port 3000[39m
+2024-05-16 19:05:47:547 [32minfo[39m: [32mBerhasil terhubung ke database mongoDB[39m
+2024-05-16 19:06:07:67 [32minfo[39m: [32msuccess get list item[39m
+2024-05-16 19:06:07:67 [35mhttp[39m: [35m::1 GET /item/?limit=2 304 - - 34.787 ms[39m
+[35m[39m
+2024-05-16 19:06:08:68 [32minfo[39m: [32msuccess get list customer[39m
+2024-05-16 19:06:08:68 [35mhttp[39m: [35m::1 GET /customer/?limit=2 304 - - 5.478 ms[39m
+[35m[39m
+2024-05-16 19:06:17:617 [32minfo[39m: [32msuccess create new customer[39m
+2024-05-16 19:06:17:617 [35mhttp[39m: [35m::1 POST /customer/ 201 186 - 37.154 ms[39m
+[35m[39m
+2024-05-16 19:06:17:617 [31merror[39m: [31mE11000 duplicate key error collection: laundryv3.customers index: code_1 dup key: { code: "CUS-001" }[39m
+2024-05-16 19:06:17:617 [35mhttp[39m: [35m::1 POST /customer/ 400 60 - 35.250 ms[39m
+[35m[39m
+2024-05-16 19:06:18:618 [32minfo[39m: [32msuccess get list customer[39m
+2024-05-16 19:06:18:618 [35mhttp[39m: [35m::1 GET /customer/?limit=2 200 253 - 9.563 ms[39m
+[35m[39m
+2024-05-16 19:06:20:620 [32minfo[39m: [32msuccess get list customer[39m
+2024-05-16 19:06:20:620 [35mhttp[39m: [35m::1 GET /customer 200 253 - 17.377 ms[39m
+[35m[39m
+2024-05-16 19:06:20:620 [32minfo[39m: [32msuccess get list item[39m
+2024-05-16 19:06:20:620 [35mhttp[39m: [35m::1 GET /item 200 1423 - 18.296 ms[39m
+[35m[39m
+2024-05-16 19:06:20:620 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 19:06:20:620 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 304 - - 21.267 ms[39m
+[35m[39m
+2024-05-16 19:06:30:630 [31merror[39m: [31mFailed to send WhatsApp message: The 'To' number whatsapp:undefined is not a valid phone number.[39m
+2024-05-16 19:06:30:630 [31merror[39m: [31mThe 'To' number whatsapp:undefined is not a valid phone number.[39m
+2024-05-16 19:06:30:630 [35mhttp[39m: [35m::1 POST /transaction 500 58 - 1884.950 ms[39m
+[35m[39m
+2024-05-16 19:06:32:632 [31merror[39m: [31mFailed to send WhatsApp message: The 'To' number whatsapp:undefined is not a valid phone number.[39m
+2024-05-16 19:06:32:632 [31merror[39m: [31mThe 'To' number whatsapp:undefined is not a valid phone number.[39m
+2024-05-16 19:06:32:632 [35mhttp[39m: [35m::1 POST /transaction 500 58 - 787.651 ms[39m
+[35m[39m
+2024-05-16 19:10:22:1022 [32minfo[39m: [32mServer is running on port 3000[39m
+2024-05-16 19:10:22:1022 [32minfo[39m: [32mBerhasil terhubung ke database mongoDB[39m
+2024-05-16 19:10:31:1031 [31merror[39m: [31mFailed to send WhatsApp message: Twilio could not find a Channel with the specified From address[39m
+2024-05-16 19:10:31:1031 [31merror[39m: [31mTwilio could not find a Channel with the specified From address[39m
+2024-05-16 19:10:31:1031 [35mhttp[39m: [35m::1 POST /transaction 500 58 - 1608.179 ms[39m
+[35m[39m
+2024-05-16 19:11:17:1117 [32minfo[39m: [32mServer is running on port 3000[39m
+2024-05-16 19:11:17:1117 [32minfo[39m: [32mBerhasil terhubung ke database mongoDB[39m
+2024-05-16 19:11:32:1132 [32minfo[39m: [32mServer is running on port 3000[39m
+2024-05-16 19:11:32:1132 [32minfo[39m: [32mBerhasil terhubung ke database mongoDB[39m
+2024-05-16 19:12:11:1211 [32minfo[39m: [32mServer is running on port 3000[39m
+2024-05-16 19:12:11:1211 [32minfo[39m: [32mBerhasil terhubung ke database mongoDB[39m
+2024-05-16 19:12:44:1244 [31merror[39m: [31mFailed to send WhatsApp message: Twilio could not find a Channel with the specified From address[39m
+2024-05-16 19:12:44:1244 [31merror[39m: [31mTwilio could not find a Channel with the specified From address[39m
+2024-05-16 19:12:44:1244 [35mhttp[39m: [35m::1 POST /transaction 500 58 - 1530.442 ms[39m
+[35m[39m
+2024-05-16 19:13:38:1338 [31merror[39m: [31mFailed to send WhatsApp message: Twilio could not find a Channel with the specified From address[39m
+2024-05-16 19:13:38:1338 [31merror[39m: [31mTwilio could not find a Channel with the specified From address[39m
+2024-05-16 19:13:38:1338 [35mhttp[39m: [35m::1 POST /transaction 500 58 - 807.734 ms[39m
+[35m[39m
+2024-05-16 19:26:34:2634 [32minfo[39m: [32mServer is running on port 3000[39m
+2024-05-16 19:26:34:2634 [32minfo[39m: [32mBerhasil terhubung ke database mongoDB[39m
+2024-05-16 19:28:11:2811 [32minfo[39m: [32mWhatsApp message sent: SM1b39cf046de53958fff95074eec43617[39m
+2024-05-16 19:28:11:2811 [32minfo[39m: [32msuccess create new transaction[39m
+2024-05-16 19:28:12:2812 [35mhttp[39m: [35m::1 POST /transaction 201 451 - 2184.844 ms[39m
+[35m[39m
+2024-05-16 19:28:12:2812 [32minfo[39m: [32msuccess get list customer[39m
+2024-05-16 19:28:12:2812 [35mhttp[39m: [35m::1 GET /customer 304 - - 30.525 ms[39m
+[35m[39m
+2024-05-16 19:28:12:2812 [32minfo[39m: [32msuccess get list item[39m
+2024-05-16 19:28:12:2812 [35mhttp[39m: [35m::1 GET /item 304 - - 33.367 ms[39m
+[35m[39m
+2024-05-16 19:28:12:2812 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 19:28:12:2812 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 200 960 - 33.137 ms[39m
+[35m[39m
+2024-05-16 19:28:56:2856 [32minfo[39m: [32mWhatsApp message sent: SMd9ef686e52ea1b04a4b339ce15d15ccc[39m
+2024-05-16 19:28:56:2856 [32minfo[39m: [32msuccess create new transaction[39m
+2024-05-16 19:28:56:2856 [35mhttp[39m: [35m::1 POST /transaction 201 451 - 864.338 ms[39m
+[35m[39m
+2024-05-16 19:28:56:2856 [32minfo[39m: [32mWhatsApp message sent: SM671927069119b5dd9fa4912f26700694[39m
+2024-05-16 19:28:56:2856 [32minfo[39m: [32msuccess create new transaction[39m
+2024-05-16 19:28:56:2856 [31merror[39m: [31mE11000 duplicate key error collection: laundryv3.transactions index: code_1 dup key: { code: "TRX-007" }[39m
+2024-05-16 19:28:56:2856 [35mhttp[39m: [35m::1 POST /transaction 400 60 - 916.299 ms[39m
+[35m[39m
+2024-05-16 19:28:57:2857 [32minfo[39m: [32msuccess get list customer[39m
+2024-05-16 19:28:57:2857 [35mhttp[39m: [35m::1 GET /customer 304 - - 54.469 ms[39m
+[35m[39m
+2024-05-16 19:28:57:2857 [32minfo[39m: [32msuccess get list item[39m
+2024-05-16 19:28:57:2857 [35mhttp[39m: [35m::1 GET /item 304 - - 60.055 ms[39m
+[35m[39m
+2024-05-16 19:28:57:2857 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 19:28:57:2857 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 200 960 - 99.516 ms[39m
+[35m[39m
+2024-05-16 19:30:54:3054 [32minfo[39m: [32mWhatsApp message sent: SM684a35e52cc33c2e6068d52af6c1375c[39m
+2024-05-16 19:30:54:3054 [32minfo[39m: [32msuccess create new transaction[39m
+2024-05-16 19:30:54:3054 [35mhttp[39m: [35m::1 POST /transaction 201 446 - 1375.462 ms[39m
+[35m[39m
+2024-05-16 19:30:55:3055 [32minfo[39m: [32mWhatsApp message sent: SMe386b667c8913c2df168c26daf3555ff[39m
+2024-05-16 19:30:55:3055 [32minfo[39m: [32msuccess create new transaction[39m
+2024-05-16 19:30:55:3055 [31merror[39m: [31mE11000 duplicate key error collection: laundryv3.transactions index: code_1 dup key: { code: "TRX-008" }[39m
+2024-05-16 19:30:55:3055 [35mhttp[39m: [35m::1 POST /transaction 400 60 - 1497.849 ms[39m
+[35m[39m
+2024-05-16 19:30:55:3055 [32minfo[39m: [32msuccess get list customer[39m
+2024-05-16 19:30:55:3055 [35mhttp[39m: [35m::1 GET /customer 304 - - 39.579 ms[39m
+[35m[39m
+2024-05-16 19:30:55:3055 [32minfo[39m: [32msuccess get list item[39m
+2024-05-16 19:30:55:3055 [35mhttp[39m: [35m::1 GET /item 304 - - 56.596 ms[39m
+[35m[39m
+2024-05-16 19:30:55:3055 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 19:30:55:3055 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 200 960 - 60.420 ms[39m
+[35m[39m
+2024-05-16 19:31:15:3115 [32minfo[39m: [32mWhatsApp message sent: SM22a27d22d4d4b584f9f634a26ee71abd[39m
+2024-05-16 19:31:15:3115 [32minfo[39m: [32msuccess create new transaction[39m
+2024-05-16 19:31:15:3115 [35mhttp[39m: [35m::1 POST /transaction 201 452 - 859.101 ms[39m
+[35m[39m
+2024-05-16 19:31:15:3115 [32minfo[39m: [32msuccess get list customer[39m
+2024-05-16 19:31:15:3115 [35mhttp[39m: [35m::1 GET /customer 304 - - 50.394 ms[39m
+[35m[39m
+2024-05-16 19:31:15:3115 [32minfo[39m: [32msuccess get list item[39m
+2024-05-16 19:31:15:3115 [35mhttp[39m: [35m::1 GET /item 304 - - 60.451 ms[39m
+[35m[39m
+2024-05-16 19:31:15:3115 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 19:31:15:3115 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 200 960 - 62.283 ms[39m
+[35m[39m
+2024-05-16 19:34:37:3437 [32minfo[39m: [32mServer is running on port 3000[39m
+2024-05-16 19:34:37:3437 [32minfo[39m: [32mBerhasil terhubung ke database mongoDB[39m
+2024-05-16 19:34:41:3441 [32minfo[39m: [32msuccess get list customer[39m
+2024-05-16 19:34:41:3441 [35mhttp[39m: [35m::1 GET /customer/?limit=2 304 - - 37.166 ms[39m
+[35m[39m
+2024-05-16 19:34:44:3444 [32minfo[39m: [32msuccess get list customer[39m
+2024-05-16 19:34:44:3444 [35mhttp[39m: [35m::1 GET /customer 304 - - 35.068 ms[39m
+[35m[39m
+2024-05-16 19:34:44:3444 [32minfo[39m: [32msuccess get list item[39m
+2024-05-16 19:34:44:3444 [35mhttp[39m: [35m::1 GET /item 304 - - 37.966 ms[39m
+[35m[39m
+2024-05-16 19:34:44:3444 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 19:34:44:3444 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 304 - - 50.018 ms[39m
+[35m[39m
+2024-05-16 19:34:52:3452 [31merror[39m: [31mCannot read properties of undefined (reading 'service')[39m
+2024-05-16 19:34:52:3452 [35mhttp[39m: [35m::1 POST /transaction 500 58 - 38.209 ms[39m
+[35m[39m
+2024-05-16 19:34:54:3454 [31merror[39m: [31mCannot read properties of undefined (reading 'service')[39m
+2024-05-16 19:34:54:3454 [35mhttp[39m: [35m::1 POST /transaction 500 58 - 19.627 ms[39m
+[35m[39m
+2024-05-16 19:35:16:3516 [32minfo[39m: [32mServer is running on port 3000[39m
+2024-05-16 19:35:16:3516 [32minfo[39m: [32mBerhasil terhubung ke database mongoDB[39m
+2024-05-16 19:35:21:3521 [32minfo[39m: [32mWhatsApp message sent: SM3a5be4d465ae999c9f373ce47b004dca[39m
+2024-05-16 19:35:21:3521 [32minfo[39m: [32msuccess create new transaction[39m
+2024-05-16 19:35:21:3521 [35mhttp[39m: [35m::1 POST /transaction 201 451 - 1875.853 ms[39m
+[35m[39m
+2024-05-16 19:35:22:3522 [32minfo[39m: [32msuccess get list customer[39m
+2024-05-16 19:35:22:3522 [35mhttp[39m: [35m::1 GET /customer 304 - - 48.996 ms[39m
+[35m[39m
+2024-05-16 19:35:22:3522 [32minfo[39m: [32msuccess get list item[39m
+2024-05-16 19:35:22:3522 [35mhttp[39m: [35m::1 GET /item 304 - - 75.729 ms[39m
+[35m[39m
+2024-05-16 19:35:22:3522 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 19:35:22:3522 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 200 961 - 101.447 ms[39m
+[35m[39m
+2024-05-16 19:38:26:3826 [32minfo[39m: [32mServer is running on port 3000[39m
+2024-05-16 19:38:26:3826 [32minfo[39m: [32mBerhasil terhubung ke database mongoDB[39m
+2024-05-16 19:38:45:3845 [32minfo[39m: [32mServer is running on port 3000[39m
+2024-05-16 19:38:45:3845 [32minfo[39m: [32mBerhasil terhubung ke database mongoDB[39m
+2024-05-16 19:38:56:3856 [31merror[39m: [31mmoment is not defined[39m
+2024-05-16 19:38:56:3856 [35mhttp[39m: [35m::1 POST /transaction 500 58 - 49.051 ms[39m
+[35m[39m
+2024-05-16 19:38:57:3857 [31merror[39m: [31mmoment is not defined[39m
+2024-05-16 19:38:57:3857 [35mhttp[39m: [35m::1 POST /transaction 500 58 - 10.657 ms[39m
+[35m[39m
+2024-05-16 19:39:09:399 [32minfo[39m: [32mServer is running on port 3000[39m
+2024-05-16 19:39:09:399 [32minfo[39m: [32mBerhasil terhubung ke database mongoDB[39m
+2024-05-16 19:39:12:3912 [32minfo[39m: [32mWhatsApp message sent: SMee8b4052ac2cb4a2d7bb2556262da907[39m
+2024-05-16 19:39:12:3912 [32minfo[39m: [32msuccess create new transaction[39m
+2024-05-16 19:39:12:3912 [35mhttp[39m: [35m::1 POST /transaction 201 452 - 1473.221 ms[39m
+[35m[39m
+2024-05-16 19:39:13:3913 [32minfo[39m: [32msuccess get list customer[39m
+2024-05-16 19:39:13:3913 [35mhttp[39m: [35m::1 GET /customer 304 - - 23.791 ms[39m
+[35m[39m
+2024-05-16 19:39:13:3913 [32minfo[39m: [32msuccess get list item[39m
+2024-05-16 19:39:13:3913 [35mhttp[39m: [35m::1 GET /item 304 - - 55.164 ms[39m
+[35m[39m
+2024-05-16 19:39:13:3913 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 19:39:13:3913 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 200 961 - 82.463 ms[39m
+[35m[39m
+2024-05-16 19:39:42:3942 [32minfo[39m: [32mServer is running on port 3000[39m
+2024-05-16 19:39:42:3942 [32minfo[39m: [32mBerhasil terhubung ke database mongoDB[39m
+2024-05-16 19:39:50:3950 [32minfo[39m: [32mServer is running on port 3000[39m
+2024-05-16 19:39:50:3950 [32minfo[39m: [32mBerhasil terhubung ke database mongoDB[39m
+2024-05-16 19:40:01:401 [32minfo[39m: [32mServer is running on port 3000[39m
+2024-05-16 19:40:01:401 [32minfo[39m: [32mBerhasil terhubung ke database mongoDB[39m
+2024-05-16 19:40:12:4012 [32minfo[39m: [32mWhatsApp message sent: SM154a562a99434379a1697da365ef92e0[39m
+2024-05-16 19:40:12:4012 [32minfo[39m: [32msuccess create new transaction[39m
+2024-05-16 19:40:12:4012 [35mhttp[39m: [35m::1 POST /transaction 201 453 - 1634.064 ms[39m
+[35m[39m
+2024-05-16 19:40:13:4013 [32minfo[39m: [32msuccess get list customer[39m
+2024-05-16 19:40:13:4013 [35mhttp[39m: [35m::1 GET /customer 304 - - 61.946 ms[39m
+[35m[39m
+2024-05-16 19:40:13:4013 [32minfo[39m: [32msuccess get list item[39m
+2024-05-16 19:40:13:4013 [35mhttp[39m: [35m::1 GET /item 304 - - 80.462 ms[39m
+[35m[39m
+2024-05-16 19:40:13:4013 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 19:40:13:4013 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 200 961 - 100.076 ms[39m
+[35m[39m
+2024-05-16 19:41:08:418 [32minfo[39m: [32mServer is running on port 3000[39m
+2024-05-16 19:41:08:418 [32minfo[39m: [32mBerhasil terhubung ke database mongoDB[39m
+2024-05-16 19:41:24:4124 [32minfo[39m: [32mWhatsApp message sent: SM82d24d7b970d40c000d6ea9f4890833a[39m
+2024-05-16 19:41:24:4124 [32minfo[39m: [32msuccess create new transaction[39m
+2024-05-16 19:41:24:4124 [35mhttp[39m: [35m::1 POST /transaction 201 446 - 1898.361 ms[39m
+[35m[39m
+2024-05-16 19:41:25:4125 [32minfo[39m: [32msuccess get list customer[39m
+2024-05-16 19:41:25:4125 [35mhttp[39m: [35m::1 GET /customer 304 - - 91.689 ms[39m
+[35m[39m
+2024-05-16 19:41:25:4125 [32minfo[39m: [32msuccess get list item[39m
+2024-05-16 19:41:25:4125 [35mhttp[39m: [35m::1 GET /item 304 - - 126.616 ms[39m
+[35m[39m
+2024-05-16 19:41:25:4125 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 19:41:25:4125 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 200 961 - 154.254 ms[39m
+[35m[39m
+2024-05-16 19:41:57:4157 [32minfo[39m: [32mServer is running on port 3000[39m
+2024-05-16 19:41:57:4157 [32minfo[39m: [32mBerhasil terhubung ke database mongoDB[39m
+2024-05-16 19:42:12:4212 [32minfo[39m: [32mServer is running on port 3000[39m
+2024-05-16 19:42:12:4212 [32minfo[39m: [32mBerhasil terhubung ke database mongoDB[39m
+2024-05-16 19:42:20:4220 [32minfo[39m: [32mWhatsApp message sent: SM6eac9e238baac936fddda5a1565b8f13[39m
+2024-05-16 19:42:20:4220 [32minfo[39m: [32msuccess create new transaction[39m
+2024-05-16 19:42:20:4220 [35mhttp[39m: [35m::1 POST /transaction 201 452 - 1274.655 ms[39m
+[35m[39m
+2024-05-16 19:42:21:4221 [32minfo[39m: [32msuccess get list customer[39m
+2024-05-16 19:42:21:4221 [35mhttp[39m: [35m::1 GET /customer 304 - - 53.390 ms[39m
+[35m[39m
+2024-05-16 19:42:21:4221 [32minfo[39m: [32msuccess get list item[39m
+2024-05-16 19:42:21:4221 [35mhttp[39m: [35m::1 GET /item 304 - - 71.956 ms[39m
+[35m[39m
+2024-05-16 19:42:21:4221 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 19:42:21:4221 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 200 961 - 84.711 ms[39m
+[35m[39m
+2024-05-16 19:43:34:4334 [32minfo[39m: [32mServer is running on port 3000[39m
+2024-05-16 19:43:34:4334 [32minfo[39m: [32mBerhasil terhubung ke database mongoDB[39m
+2024-05-16 19:43:46:4346 [31merror[39m: [31morderCode is not defined[39m
+2024-05-16 19:43:46:4346 [35mhttp[39m: [35m::1 POST /transaction 500 58 - 39.369 ms[39m
+[35m[39m
+2024-05-16 19:43:48:4348 [31merror[39m: [31morderCode is not defined[39m
+2024-05-16 19:43:48:4348 [35mhttp[39m: [35m::1 POST /transaction 500 58 - 29.570 ms[39m
+[35m[39m
+2024-05-16 19:44:14:4414 [32minfo[39m: [32mServer is running on port 3000[39m
+2024-05-16 19:44:14:4414 [32minfo[39m: [32mBerhasil terhubung ke database mongoDB[39m
+2024-05-16 19:44:16:4416 [32minfo[39m: [32mWhatsApp message sent: SMd4988b6dcaf86fb95e88bc1da239c3f8[39m
+2024-05-16 19:44:16:4416 [32minfo[39m: [32msuccess create new transaction[39m
+2024-05-16 19:44:16:4416 [32minfo[39m: [32mWhatsApp message sent: SMd5028e35623b458c96e965c3b354e59a[39m
+2024-05-16 19:44:16:4416 [32minfo[39m: [32msuccess create new transaction[39m
+2024-05-16 19:44:16:4416 [35mhttp[39m: [35m::1 POST /transaction 201 452 - 2042.362 ms[39m
+[35m[39m
+2024-05-16 19:44:16:4416 [31merror[39m: [31mE11000 duplicate key error collection: laundryv3.transactions index: code_1 dup key: { code: "TRX-015" }[39m
+2024-05-16 19:44:16:4416 [35mhttp[39m: [35m::1 POST /transaction 400 60 - 2037.114 ms[39m
+[35m[39m
+2024-05-16 19:44:17:4417 [32minfo[39m: [32msuccess get list customer[39m
+2024-05-16 19:44:17:4417 [35mhttp[39m: [35m::1 GET /customer 304 - - 49.200 ms[39m
+[35m[39m
+2024-05-16 19:44:17:4417 [32minfo[39m: [32msuccess get list item[39m
+2024-05-16 19:44:17:4417 [35mhttp[39m: [35m::1 GET /item 304 - - 117.906 ms[39m
+[35m[39m
+2024-05-16 19:44:17:4417 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 19:44:17:4417 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 200 961 - 178.439 ms[39m
+[35m[39m
+2024-05-16 19:45:06:456 [32minfo[39m: [32mServer is running on port 3000[39m
+2024-05-16 19:45:06:456 [32minfo[39m: [32mBerhasil terhubung ke database mongoDB[39m
+2024-05-16 19:45:14:4514 [32minfo[39m: [32msuccess get list customer[39m
+2024-05-16 19:45:14:4514 [35mhttp[39m: [35m::1 GET /customer/?limit=2 304 - - 32.056 ms[39m
+[35m[39m
+2024-05-16 19:45:16:4516 [32minfo[39m: [32msuccess get list customer[39m
+2024-05-16 19:45:16:4516 [35mhttp[39m: [35m::1 GET /customer 304 - - 35.473 ms[39m
+[35m[39m
+2024-05-16 19:45:16:4516 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 19:45:16:4516 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 304 - - 42.097 ms[39m
+[35m[39m
+2024-05-16 19:45:16:4516 [32minfo[39m: [32msuccess get list item[39m
+2024-05-16 19:45:16:4516 [35mhttp[39m: [35m::1 GET /item 304 - - 45.288 ms[39m
+[35m[39m
+2024-05-16 19:45:25:4525 [32minfo[39m: [32mWhatsApp message sent: SM556361253830e655b026e2362da06847[39m
+2024-05-16 19:45:25:4525 [32minfo[39m: [32msuccess create new transaction[39m
+2024-05-16 19:45:25:4525 [35mhttp[39m: [35m::1 POST /transaction 201 451 - 1707.779 ms[39m
+[35m[39m
+2024-05-16 19:45:26:4526 [32minfo[39m: [32msuccess get list customer[39m
+2024-05-16 19:45:26:4526 [35mhttp[39m: [35m::1 GET /customer 304 - - 18.677 ms[39m
+[35m[39m
+2024-05-16 19:45:26:4526 [32minfo[39m: [32msuccess get list item[39m
+2024-05-16 19:45:26:4526 [35mhttp[39m: [35m::1 GET /item 304 - - 33.701 ms[39m
+[35m[39m
+2024-05-16 19:45:26:4526 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 19:45:26:4526 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 200 961 - 34.210 ms[39m
+[35m[39m
+2024-05-16 19:46:00:460 [32minfo[39m: [32mServer is running on port 3000[39m
+2024-05-16 19:46:00:460 [32minfo[39m: [32mBerhasil terhubung ke database mongoDB[39m
+2024-05-16 19:46:18:4618 [32minfo[39m: [32mWhatsApp message sent: SM535c988c4e107866030306787273a41f[39m
+2024-05-16 19:46:18:4618 [32minfo[39m: [32msuccess create new transaction[39m
+2024-05-16 19:46:18:4618 [35mhttp[39m: [35m::1 POST /transaction 201 447 - 1368.123 ms[39m
+[35m[39m
+2024-05-16 19:46:18:4618 [32minfo[39m: [32msuccess get list customer[39m
+2024-05-16 19:46:18:4618 [35mhttp[39m: [35m::1 GET /customer 304 - - 40.746 ms[39m
+[35m[39m
+2024-05-16 19:46:18:4618 [32minfo[39m: [32msuccess get list item[39m
+2024-05-16 19:46:18:4618 [35mhttp[39m: [35m::1 GET /item 304 - - 33.989 ms[39m
+[35m[39m
+2024-05-16 19:46:18:4618 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 19:46:18:4618 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 200 961 - 38.065 ms[39m
+[35m[39m
+2024-05-16 19:46:59:4659 [32minfo[39m: [32mServer is running on port 3000[39m
+2024-05-16 19:46:59:4659 [32minfo[39m: [32mBerhasil terhubung ke database mongoDB[39m

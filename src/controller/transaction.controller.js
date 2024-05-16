@@ -8,6 +8,26 @@ const {
 const { ExceptionHandler } = require("../libs/lib.exception");
 const logger = require("../libs/lib.logger");
 const { TransactionModel } = require("../model/transaction.model");
+const twilio = require("twilio");
+const client = twilio(
+  process.env.TWILIO_ACCOUNT_SID,
+  process.env.TWILIO_AUTH_TOKEN
+);
+
+async function sendWhatsAppMessage(to, body) {
+  try {
+    const message = await client.messages.create({
+      from: process.env.TWILIO_WHATSAPP_FROM,
+      to: `whatsapp:${to}`,
+      body: body,
+    });
+    logger.info(`WhatsApp message sent: ${message.sid}`);
+    return message.sid;
+  } catch (error) {
+    logger.error(`Failed to send WhatsApp message: ${error.message}`);
+    throw error;
+  }
+}
 
 async function TransactionList(req, res) {
   try {
@@ -38,9 +58,19 @@ async function TransactionCreate(req, res) {
     const nextTransactionNumber = lastTransactionNumber + 1;
     const nextTransactionCode = generateTransactionCode(nextTransactionNumber);
     req.body.code = nextTransactionCode;
-    console.log(res.body)
-    const result = await TransactionModel.create(req.body);
+    // Send WhatsApp message
+    const customerPhoneNumber = "+6287825389910";
+    const messageBody = `
+Kode Pesanan : ${req.body.code}
+Layanan      : ${req.body.items.name}
+Waktu Proses : ${req.body.items.service} \n \n
+Pesanan Anda akan diproses dalam waktu ${req.body.items.service}. \n\n
+Terima kasih telah menggunakan layanan kami!
+  `;
+    await sendWhatsAppMessage(customerPhoneNumber, messageBody);
+
     logger.info(`success create new transaction`);
+    const result = await TransactionModel.create(req.body);
     return res.status(201).json(result);
   } catch (error) {
     logger.error(error);
@@ -89,7 +119,7 @@ async function TransactionDelete(req, res) {
   try {
     await GetOr404(TransactionModel, { _id: req.params.id });
     await TransactionModel.findOneAndDelete({ _id: req.params.id });
-    
+
     return res.status(204).json(null);
   } catch (error) {
     logger.log(error);
