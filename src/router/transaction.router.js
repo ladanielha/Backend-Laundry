@@ -4,6 +4,7 @@ const {
   TransactionList,
   TransactionCreate,
   TransactionDetail,
+  TransactionUpdate,
 } = require("../controller/transaction.controller");
 const { TransactionCodeValidator, TransactionTotalPriceValidator, TransactionCustomerValidator, TransactionItemsValidator } = require("../validations/transaction.validation");
 const { CustomerCodeValidator, CustomerNameValidator, CustomerPhoneValidator, CustomerIDValidator } = require("../validations/customer.validation");
@@ -33,6 +34,7 @@ TransactionRouter.post(
   TransactionCreate
 );
 TransactionRouter.get("/:id", [IsAuthenticated], TransactionDetail);
+TransactionRouter.put("/:id", [IsAuthenticated], TransactionUpdate);
 
 module.exports = {
   TransactionRouter,

@@ -1,10 +1,11 @@
 const mongoose = require("mongoose");
 const { CustomerObject } = require("../model/customer.model");
 const { ItemObject } = require("../model/item.model");
-const { AdminObject } = require("./admin.model");
 
 const TransactionObject = {
   code: { type: String, require: true, unique: true },
+  statusPayment: { type: String, default:"UnPaid"},
+  statusLaundry: { type: String, default:"Process"},
   totalPrice: { type: Number, required: true },
   customers: new mongoose.Schema({
     ...CustomerObject,

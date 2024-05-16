@@ -59,7 +59,7 @@ async function TransactionCreate(req, res) {
     const nextTransactionCode = generateTransactionCode(nextTransactionNumber);
     req.body.code = nextTransactionCode;
     // Send WhatsApp message
-    const customerPhoneNumber = "+6281314694123";
+    const customerPhoneNumber = "+6287825389910";
     const messageBody = `
 Kode Pesanan : ${req.body.code}
 Layanan      : ${req.body.items.name}
@@ -108,6 +108,7 @@ async function TransactionUpdate(req, res) {
       req.body,
       { new: true }
     );
+    logger.info(`success change status transaction`);
     return res.status(200).json(result);
   } catch (error) {
     logger.log(error);
@@ -119,7 +120,6 @@ async function TransactionDelete(req, res) {
   try {
     await GetOr404(TransactionModel, { _id: req.params.id });
     await TransactionModel.findOneAndDelete({ _id: req.params.id });
-
     return res.status(204).json(null);
   } catch (error) {
     logger.log(error);
