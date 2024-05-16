@@ -59,7 +59,7 @@ async function TransactionCreate(req, res) {
     const nextTransactionCode = generateTransactionCode(nextTransactionNumber);
     req.body.code = nextTransactionCode;
     // Send WhatsApp message
-    const customerPhoneNumber = "+6287825389910";
+    const customerPhoneNumber = "+6281314694123";
     const messageBody = `
 Kode Pesanan : ${req.body.code}
 Layanan      : ${req.body.items.name}
