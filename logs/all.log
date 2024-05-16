@@ -2089,3 +2089,220 @@
 2024-05-16 22:22:14:2214 [32minfo[39m: [32msuccess get list transaction[39m
 2024-05-16 22:22:14:2214 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 304 - - 5.655 ms[39m
 [35m[39m
+2024-05-16 23:26:56:2656 [32minfo[39m: [32mServer is running on port 3000[39m
+2024-05-16 23:26:57:2657 [32minfo[39m: [32mBerhasil terhubung ke database mongoDB[39m
+2024-05-16 23:27:17:2717 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:27:17:2717 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 200 1066 - 67.811 ms[39m
+[35m[39m
+2024-05-16 23:27:24:2724 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:27:24:2724 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 304 - - 19.890 ms[39m
+[35m[39m
+2024-05-16 23:27:35:2735 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:27:35:2735 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 304 - - 14.165 ms[39m
+[35m[39m
+2024-05-16 23:27:42:2742 [32minfo[39m: [32msuccess change status transaction[39m
+2024-05-16 23:27:42:2742 [35mhttp[39m: [35m::1 PUT /transaction/66460abd026cd5712c84e45a 200 499 - 1064.863 ms[39m
+[35m[39m
+2024-05-16 23:27:45:2745 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:27:45:2745 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 200 1063 - 26.595 ms[39m
+[35m[39m
+2024-05-16 23:29:02:292 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:29:02:292 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 304 - - 15.952 ms[39m
+[35m[39m
+2024-05-16 23:29:10:2910 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:29:10:2910 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 304 - - 21.090 ms[39m
+[35m[39m
+2024-05-16 23:29:25:2925 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:29:25:2925 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 200 1066 - 27.750 ms[39m
+[35m[39m
+2024-05-16 23:29:28:2928 [32minfo[39m: [32msuccess change status transaction[39m
+2024-05-16 23:29:28:2928 [35mhttp[39m: [35m::1 PUT /transaction/66460914026cd5712c84e44c 200 499 - 214.537 ms[39m
+[35m[39m
+2024-05-16 23:29:31:2931 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:29:31:2931 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 200 1063 - 14.801 ms[39m
+[35m[39m
+2024-05-16 23:29:43:2943 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:29:43:2943 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 304 - - 21.544 ms[39m
+[35m[39m
+2024-05-16 23:29:44:2944 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:29:44:2944 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 304 - - 27.516 ms[39m
+[35m[39m
+2024-05-16 23:29:45:2945 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:29:45:2945 [35mhttp[39m: [35m::1 GET /transaction/?page=2&limit=2 200 567 - 10.239 ms[39m
+[35m[39m
+2024-05-16 23:29:51:2951 [32minfo[39m: [32msuccess change status transaction[39m
+2024-05-16 23:29:51:2951 [35mhttp[39m: [35m::1 PUT /transaction/66461fb670c0bd02845fe2fe 200 500 - 229.823 ms[39m
+[35m[39m
+2024-05-16 23:29:52:2952 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:29:52:2952 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 304 - - 22.684 ms[39m
+[35m[39m
+2024-05-16 23:29:53:2953 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:29:53:2953 [35mhttp[39m: [35m::1 GET /transaction/?page=2&limit=2 200 564 - 5.480 ms[39m
+[35m[39m
+2024-05-16 23:30:32:3032 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:30:32:3032 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 304 - - 4.252 ms[39m
+[35m[39m
+2024-05-16 23:31:30:3130 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:31:30:3130 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 304 - - 35.858 ms[39m
+[35m[39m
+2024-05-16 23:31:32:3132 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:31:32:3132 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 304 - - 24.235 ms[39m
+[35m[39m
+2024-05-16 23:31:33:3133 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:31:33:3133 [35mhttp[39m: [35m::1 GET /transaction/?page=2&limit=2 304 - - 10.827 ms[39m
+[35m[39m
+2024-05-16 23:31:52:3152 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:31:52:3152 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 304 - - 20.641 ms[39m
+[35m[39m
+2024-05-16 23:32:21:3221 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:32:21:3221 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 304 - - 54.409 ms[39m
+[35m[39m
+2024-05-16 23:32:23:3223 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:32:23:3223 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 304 - - 26.174 ms[39m
+[35m[39m
+2024-05-16 23:32:45:3245 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:32:45:3245 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 200 1066 - 24.121 ms[39m
+[35m[39m
+2024-05-16 23:32:55:3255 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:32:55:3255 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 304 - - 17.906 ms[39m
+[35m[39m
+2024-05-16 23:33:15:3315 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:33:15:3315 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 304 - - 17.648 ms[39m
+[35m[39m
+2024-05-16 23:33:22:3322 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:33:22:3322 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 304 - - 20.284 ms[39m
+[35m[39m
+2024-05-16 23:36:04:364 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:36:04:364 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 304 - - 9.932 ms[39m
+[35m[39m
+2024-05-16 23:36:07:367 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:36:07:367 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 304 - - 9.189 ms[39m
+[35m[39m
+2024-05-16 23:36:25:3625 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:36:25:3625 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 304 - - 7.376 ms[39m
+[35m[39m
+2024-05-16 23:36:35:3635 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:36:35:3635 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 304 - - 23.395 ms[39m
+[35m[39m
+2024-05-16 23:37:04:374 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:37:04:374 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 304 - - 17.113 ms[39m
+[35m[39m
+2024-05-16 23:37:22:3722 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:37:22:3722 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 304 - - 15.945 ms[39m
+[35m[39m
+2024-05-16 23:37:25:3725 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:37:25:3725 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 304 - - 26.053 ms[39m
+[35m[39m
+2024-05-16 23:37:31:3731 [32minfo[39m: [32msuccess change status transaction[39m
+2024-05-16 23:37:31:3731 [35mhttp[39m: [35m::1 PUT /transaction/66460914026cd5712c84e44c 200 500 - 174.539 ms[39m
+[35m[39m
+2024-05-16 23:37:33:3733 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:37:33:3733 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 200 1064 - 10.280 ms[39m
+[35m[39m
+2024-05-16 23:37:40:3740 [32minfo[39m: [32msuccess change status transaction[39m
+2024-05-16 23:37:40:3740 [35mhttp[39m: [35m::1 PUT /transaction/66460abd026cd5712c84e45a 200 497 - 252.636 ms[39m
+[35m[39m
+2024-05-16 23:37:41:3741 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:37:41:3741 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 200 1062 - 5.585 ms[39m
+[35m[39m
+2024-05-16 23:37:45:3745 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:37:45:3745 [35mhttp[39m: [35m::1 GET /transaction/?page=2&limit=2 304 - - 3.575 ms[39m
+[35m[39m
+2024-05-16 23:37:47:3747 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:37:47:3747 [35mhttp[39m: [35m::1 GET /transaction/?page=1&limit=2 200 1062 - 6.204 ms[39m
+[35m[39m
+2024-05-16 23:37:50:3750 [32minfo[39m: [32msuccess change status transaction[39m
+2024-05-16 23:37:50:3750 [35mhttp[39m: [35m::1 PUT /transaction/66460914026cd5712c84e44c 200 497 - 211.855 ms[39m
+[35m[39m
+2024-05-16 23:37:51:3751 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:37:51:3751 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 200 1059 - 12.013 ms[39m
+[35m[39m
+2024-05-16 23:37:53:3753 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:37:53:3753 [35mhttp[39m: [35m::1 GET /transaction/?page=2&limit=2 304 - - 8.474 ms[39m
+[35m[39m
+2024-05-16 23:37:57:3757 [32minfo[39m: [32msuccess change status transaction[39m
+2024-05-16 23:37:57:3757 [35mhttp[39m: [35m::1 PUT /transaction/66461fb670c0bd02845fe2fe 200 498 - 292.161 ms[39m
+[35m[39m
+2024-05-16 23:37:58:3758 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:37:58:3758 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 304 - - 19.475 ms[39m
+[35m[39m
+2024-05-16 23:38:01:381 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:38:01:381 [35mhttp[39m: [35m::1 GET /transaction/?page=2&limit=2 200 562 - 3.464 ms[39m
+[35m[39m
+2024-05-16 23:38:03:383 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:38:03:383 [35mhttp[39m: [35m::1 GET /transaction/?page=1&limit=2 200 1059 - 3.594 ms[39m
+[35m[39m
+2024-05-16 23:38:32:3832 [32minfo[39m: [32msuccess get list customer[39m
+2024-05-16 23:38:32:3832 [35mhttp[39m: [35m::1 GET /customer 304 - - 24.528 ms[39m
+[35m[39m
+2024-05-16 23:38:32:3832 [32minfo[39m: [32msuccess get list item[39m
+2024-05-16 23:38:32:3832 [35mhttp[39m: [35m::1 GET /item 304 - - 36.661 ms[39m
+[35m[39m
+2024-05-16 23:38:32:3832 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:38:32:3832 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 304 - - 43.811 ms[39m
+[35m[39m
+2024-05-16 23:38:38:3838 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:38:38:3838 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 304 - - 12.217 ms[39m
+[35m[39m
+2024-05-16 23:38:40:3840 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:38:40:3840 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 304 - - 38.249 ms[39m
+[35m[39m
+2024-05-16 23:38:40:3840 [32minfo[39m: [32msuccess get list customer[39m
+2024-05-16 23:38:40:3840 [35mhttp[39m: [35m::1 GET /customer 304 - - 32.407 ms[39m
+[35m[39m
+2024-05-16 23:38:40:3840 [32minfo[39m: [32msuccess get list item[39m
+2024-05-16 23:38:40:3840 [35mhttp[39m: [35m::1 GET /item 304 - - 37.029 ms[39m
+[35m[39m
+2024-05-16 23:38:55:3855 [32minfo[39m: [32mWhatsApp message sent: SM11ee4e806a74ae5f739838481574e0d8[39m
+2024-05-16 23:38:55:3855 [32minfo[39m: [32msuccess create new transaction[39m
+2024-05-16 23:38:55:3855 [35mhttp[39m: [35m::1 POST /transaction 201 503 - 1936.233 ms[39m
+[35m[39m
+2024-05-16 23:38:55:3855 [35mhttp[39m: [35m::1 POST /transaction - - - - ms[39m
+[35m[39m
+2024-05-16 23:38:56:3856 [32minfo[39m: [32msuccess get list customer[39m
+2024-05-16 23:38:56:3856 [35mhttp[39m: [35m::1 GET /customer 304 - - 29.384 ms[39m
+[35m[39m
+2024-05-16 23:38:56:3856 [32minfo[39m: [32msuccess get list item[39m
+2024-05-16 23:38:56:3856 [35mhttp[39m: [35m::1 GET /item 304 - - 44.976 ms[39m
+[35m[39m
+2024-05-16 23:38:56:3856 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:38:56:3856 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 200 1059 - 47.556 ms[39m
+[35m[39m
+2024-05-16 23:38:56:3856 [32minfo[39m: [32mWhatsApp message sent: SM5f00ca71b1ff04b1a6b61e3ebfc02d34[39m
+2024-05-16 23:38:56:3856 [32minfo[39m: [32msuccess create new transaction[39m
+2024-05-16 23:39:24:3924 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:39:24:3924 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 200 1059 - 20.320 ms[39m
+[35m[39m
+2024-05-16 23:39:43:3943 [32minfo[39m: [32msuccess get list item[39m
+2024-05-16 23:39:43:3943 [35mhttp[39m: [35m::1 GET /item 304 - - 21.840 ms[39m
+[35m[39m
+2024-05-16 23:39:43:3943 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:39:43:3943 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 304 - - 22.854 ms[39m
+[35m[39m
+2024-05-16 23:39:43:3943 [32minfo[39m: [32msuccess get list customer[39m
+2024-05-16 23:39:43:3943 [35mhttp[39m: [35m::1 GET /customer 304 - - 26.885 ms[39m
+[35m[39m
+2024-05-16 23:39:50:3950 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:39:50:3950 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 304 - - 14.154 ms[39m
+[35m[39m
+2024-05-16 23:40:09:409 [32minfo[39m: [32msuccess get list customer[39m
+2024-05-16 23:40:09:409 [35mhttp[39m: [35m::1 GET /customer 304 - - 17.770 ms[39m
+[35m[39m
+2024-05-16 23:40:09:409 [32minfo[39m: [32msuccess get list item[39m
+2024-05-16 23:40:09:409 [35mhttp[39m: [35m::1 GET /item 304 - - 23.865 ms[39m
+[35m[39m
+2024-05-16 23:40:09:409 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:40:09:409 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 304 - - 39.710 ms[39m
+[35m[39m
+2024-05-16 23:40:12:4012 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:40:12:4012 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 304 - - 23.670 ms[39m
+[35m[39m
+2024-05-16 23:40:14:4014 [32minfo[39m: [32msuccess get list item[39m
+2024-05-16 23:40:14:4014 [35mhttp[39m: [35m::1 GET /item/?limit=2 304 - - 9.815 ms[39m
+[35m[39m
+2024-05-16 23:40:15:4015 [32minfo[39m: [32msuccess get list customer[39m
+2024-05-16 23:40:15:4015 [35mhttp[39m: [35m::1 GET /customer/?limit=2 304 - - 3.276 ms[39m
+[35m[39m
+2024-05-16 23:40:20:4020 [32minfo[39m: [32msuccess get list transaction[39m
+2024-05-16 23:40:20:4020 [35mhttp[39m: [35m::1 GET /transaction/?limit=2 304 - - 8.389 ms[39m
+[35m[39m

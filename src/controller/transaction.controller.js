@@ -103,6 +103,7 @@ async function TransactionDetailByNomor(req, res) {
 async function TransactionUpdate(req, res) {
   try {
     await GetOr404(TransactionModel, { _id: req.params.id });
+    console.log(req)
     const result = await TransactionModel.findOneAndUpdate(
       { _id: req.params.id },
       req.body,
