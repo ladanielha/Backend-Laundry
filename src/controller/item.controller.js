@@ -5,7 +5,9 @@ const {
   GetOr404,
 } = require("../libs/lib.common");
 const { ExceptionHandler } = require("../libs/lib.exception");
+const logger = require("../libs/lib.logger");
 const { ItemModel } = require("../model/item.model");
+
 
 async function ItemList(req, res) {
   try {
@@ -13,6 +15,7 @@ async function ItemList(req, res) {
     const search = SearchBackend(req, result, ["code", "name", "service"]);
     const filter = FilterBackend(req, search);
     const paging = await Pagination(req, res, filter);
+    logger.info(`success get list item`);
     return res.status(200).json(paging);
   } catch (error) {
     return ExceptionHandler(error, res);
@@ -38,10 +41,10 @@ async function ItemCreate(req, res) {
     // Add the code to the request body
     req.body.code = nextItemCode;
     const result = await ItemModel.create(req.body);
-    console.log(result);
+    logger.info(`success create new item`);
     return res.status(201).json(result);
   } catch (error) {
-    console.log(error);
+    logger.error(error);
     return ExceptionHandler(error, res);
   }
 }
@@ -49,8 +52,10 @@ async function ItemCreate(req, res) {
 async function ItemDetail(req, res) {
   try {
     const result = await GetOr404(ItemModel, { _id: req.params.id });
+    logger.info(`success get item detail`);
     return res.status(200).json(result);
   } catch (error) {
+    logger.error(error);
     return ExceptionHandler(error, res);
   }
 }
@@ -63,8 +68,10 @@ async function ItemUpdate(req, res) {
       req.body,
       { new: true }
     );
+    logger.info(`success update item`);
     return res.status(200).json(result);
   } catch (error) {
+    logger.error(error);
     return ExceptionHandler(error, res);
   }
 }
@@ -73,8 +80,10 @@ async function ItemDelete(req, res) {
   try {
     await GetOr404(ItemModel, { _id: req.params.id });
     await ItemModel.findOneAndDelete({ _id: req.params.id });
+    logger.warning(`success delete item`);
     return res.status(204).json(null);
   } catch (error) {
+    logger.error(error);
     return ExceptionHandler(error, res);
   }
 }

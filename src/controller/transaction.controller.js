@@ -1,3 +1,4 @@
+const { log } = require("winston");
 const {
   Pagination,
   SearchBackend,
@@ -5,6 +6,7 @@ const {
   GetOr404,
 } = require("../libs/lib.common");
 const { ExceptionHandler } = require("../libs/lib.exception");
+const logger = require("../libs/lib.logger");
 const { TransactionModel } = require("../model/transaction.model");
 
 async function TransactionList(req, res) {
@@ -13,9 +15,10 @@ async function TransactionList(req, res) {
     const search = SearchBackend(req, result, ["code", "customers.name"]);
     const filter = FilterBackend(req, search);
     const paging = await Pagination(req, res, filter);
+    logger.info(`success get list transaction`);
     return res.status(200).json(paging);
   } catch (error) {
-    console.log(error);
+    logger.error(error);
     return ExceptionHandler(error, res);
   }
 }
@@ -37,9 +40,10 @@ async function TransactionCreate(req, res) {
     req.body.code = nextTransactionCode;
     console.log(res.body)
     const result = await TransactionModel.create(req.body);
+    logger.info(`success create new transaction`);
     return res.status(201).json(result);
   } catch (error) {
-    console.log(error);
+    logger.error(error);
     return ExceptionHandler(error, res);
   }
 }
@@ -49,7 +53,7 @@ async function TransactionDetail(req, res) {
     const result = await GetOr404(TransactionModel, { _id: req.params.id });
     return res.status(200).json(result);
   } catch (error) {
-    console.log(error);
+    logger.log(error);
     return ExceptionHandler(error, res);
   }
 }
@@ -61,7 +65,7 @@ async function TransactionDetailByNomor(req, res) {
     });
     return res.status(200).json(result);
   } catch (error) {
-    console.log(error);
+    logger.log(error);
     return ExceptionHandler(error, res);
   }
 }
@@ -76,7 +80,7 @@ async function TransactionUpdate(req, res) {
     );
     return res.status(200).json(result);
   } catch (error) {
-    console.log(error);
+    logger.log(error);
     return ExceptionHandler(error, res);
   }
 }
@@ -85,9 +89,10 @@ async function TransactionDelete(req, res) {
   try {
     await GetOr404(TransactionModel, { _id: req.params.id });
     await TransactionModel.findOneAndDelete({ _id: req.params.id });
+    
     return res.status(204).json(null);
   } catch (error) {
-    console.log(error);
+    logger.log(error);
     return ExceptionHandler(error, res);
   }
 }

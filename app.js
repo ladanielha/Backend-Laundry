@@ -9,15 +9,18 @@ const { ItemRouter } = require("./src/router/item.router");
 const cors = require("cors");
 const { ROUTER_BASE_TRANSACTION } = require("./src/config/transaction.config");
 const { TransactionRouter } = require("./src/router/transaction.router");
-
+const morganMiddleware = require("./src/midlleware/middleware.morgan");
 const app = express();
 
+
 MongoDBConnection();
+
 
 app.use(express.json());
 app.use(cors({
   origin:"*"
 }));
+app.use(morganMiddleware);
 
 app.use(ROUTER_BASE_ADMIN, AdminRouter);
 app.use(ROUTER_BASE_CUSTOMER, CustomerRouter);

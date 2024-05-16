@@ -1,5 +1,6 @@
 const { SearchBackend, FilterBackend, Pagination, GetOr404 } = require("../libs/lib.common");
 const { ExceptionHandler } = require("../libs/lib.exception");
+const logger = require("../libs/lib.logger");
 const { CustomerModel } = require("../model/customer.model");
 
 async function CustomerList(req, res) {
@@ -8,8 +9,10 @@ async function CustomerList(req, res) {
     const search = SearchBackend(req, result, ['code', 'name', 'phonenumber']);
     const filter = FilterBackend(req, search);
     const paging = await Pagination(req, res, filter);
+    logger.info(`success get list customer`);
     return res.status(200).json(paging)
   } catch (error) {
+    logger.error(error);
     return ExceptionHandler(error, res)
   }
 }
@@ -31,10 +34,11 @@ async function CustomerCreate(req, res) {
     req.body.code = nextCustomerCode;
     // Create the Customer with the updated body
     const result = await CustomerModel.create(req.body);
+    logger.info(`success create new customer`);
     console.log(result);
     return res.status(201).json(result);
   } catch (error) {
-    console.log(error);
+    logger.error(error);
     return ExceptionHandler(error, res)
   }
 }
@@ -42,8 +46,10 @@ async function CustomerCreate(req, res) {
 async function CustomerDetail(req, res) {
   try {
     const result = await GetOr404(CustomerModel, {_id: req.params.id});
+    logger.info(`success get customer detail`);
     return res.status(200).json(result);
   } catch (error) {
+    logger.error(error);
     return ExceptionHandler(error, res)
   }
 }
@@ -52,6 +58,7 @@ async function CustomerDetailByNomor(req, res) {
     const result = await GetOr404(CustomerModel, {nomor: req.params.nomor});
     return res.status(200).json(result);
   } catch (error) {
+    
     return ExceptionHandler(error, res)
   }
 }
@@ -63,8 +70,10 @@ async function CustomerUpdate(req, res) {
       req.cleanedData,
       {new: true}
     )
+    logger.info(`success update customer`);
     return res.status(200).json(result);
   } catch (error) {
+    logger.error(error);
     return ExceptionHandler(error, res)
   }
 }
@@ -73,8 +82,10 @@ async function CustomerDelete(req, res) {
   try {
     await GetOr404(CustomerModel, {_id: req.params.id})
     await CustomerModel.findOneAndDelete({_id: req.params.id})
+    logger.warning(`success delete customer`);
     return res.status(204).json(null);
   } catch (error) {
+    logger.error(error);
     return ExceptionHandler(error, res)
   }
 }

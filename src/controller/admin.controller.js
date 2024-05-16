@@ -8,6 +8,7 @@ const { ExceptionHandler } = require("../libs/lib.exception");
 const { AdminEmailValidator } = require("../validations/admin.validation");
 const { body } = require("express-validator");
 const { AdminModel } = require("../model/admin.model");
+const logger = require("../libs/lib.logger");
 
 async function AdminCreate(req, res) {
   try {
@@ -23,9 +24,11 @@ async function AdminCreate(req, res) {
     await AdminModel.create({ ...req.body, password: passwordEncrypted });
     // Remove password from payload before sending response
     const { password, ...payload } = req.body;
+    logger.info("Admin Created");
     return res.status(201).json(payload);
   } catch (error) {
     console.log(error);
+    logger.error(error);
     // Handle exceptions
     return ExceptionHandler(error, res);
   }
@@ -44,9 +47,10 @@ async function AdminSignIn(req, res) {
     // Make Token JWT
     const token = MakeJWTToken(payload);
     // Return Response
+    logger.info(`${payload.email} Login Success`);
     return res.status(200).json({ token, payload });
   } catch (error) {
-    console.log(error);
+    logger.error(error);
     return ExceptionHandler(error, res);
   }
 }
