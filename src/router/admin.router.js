@@ -1,11 +1,19 @@
-// const express = require("express");
-// const { UserCreate, UserSignIn } = require("./admin.controller");
+const express = require("express");
+const { AdminCreate, AdminSignIn } = require("../controller/admin.controller");
+const { AdminEmailValidator, AdminUsernameValidator } = require("../validations/admin.validation");
 
-// const UserRouter = express.Router();
+const AdminRouter = express.Router();
 
-// UserRouter.post("/", UserCreate);
-// UserRouter.post("/signin", UserSignIn)
+AdminRouter.post("/", [
+  AdminUsernameValidator(false),
+  AdminEmailValidator(),
+], AdminCreate);
 
-// module.exports = {
-//   UserRouter
-// }
+AdminRouter.post("/signin", [
+  AdminEmailValidator(false),
+],
+AdminSignIn);
+
+module.exports = {
+  AdminRouter
+};

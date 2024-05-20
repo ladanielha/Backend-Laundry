@@ -1,0 +1,511 @@
+2024-05-16 18:16:22:1622 [31merror[39m: [31mEmail tidak terdaftar.[39m
+2024-05-16 18:16:22:1622 [31merror[39m: [31mEmail tidak terdaftar.[39m
+2024-05-16 18:16:42:1642 [31merror[39m: [31mEmail tidak terdaftar.[39m
+2024-05-16 18:16:42:1642 [31merror[39m: [31mEmail tidak terdaftar.[39m
+2024-05-16 18:16:42:1642 [31merror[39m: [31mEmail tidak terdaftar.[39m
+2024-05-16 18:17:14:1714 [31merror[39m: [31mEmail tidak terdaftar.[39m
+2024-05-16 18:19:10:1910 [31merror[39m: [31mEmail tidak terdaftar.[39m
+2024-05-16 18:19:40:1940 [31merror[39m: [31mEmail tidak terdaftar.[39m
+2024-05-16 18:20:01:201 [31merror[39m: [31m<ref *2> ServerResponse {[39m
+[31m  _events: [Object: null prototype] { finish: [Function: bound resOnFinish] },[39m
+[31m  _eventsCount: 1,[39m
+[31m  _maxListeners: undefined,[39m
+[31m  outputData: [],[39m
+[31m  outputSize: 0,[39m
+[31m  writable: true,[39m
+[31m  destroyed: false,[39m
+[31m  _last: false,[39m
+[31m  chunkedEncoding: false,[39m
+[31m  shouldKeepAlive: true,[39m
+[31m  maxRequestsOnConnectionReached: false,[39m
+[31m  _defaultKeepAlive: true,[39m
+[31m  useChunkedEncodingByDefault: true,[39m
+[31m  sendDate: true,[39m
+[31m  _removedConnection: false,[39m
+[31m  _removedContLen: false,[39m
+[31m  _removedTE: false,[39m
+[31m  strictContentLength: false,[39m
+[31m  _contentLength: null,[39m
+[31m  _hasBody: true,[39m
+[31m  _trailer: '',[39m
+[31m  finished: false,[39m
+[31m  _headerSent: false,[39m
+[31m  _closed: false,[39m
+[31m  socket: <ref *1> Socket {[39m
+[31m    connecting: false,[39m
+[31m    _hadError: false,[39m
+[31m    _parent: null,[39m
+[31m    _host: null,[39m
+[31m    _closeAfterHandlingError: false,[39m
+[31m    _events: {[39m
+[31m      close: [Array],[39m
+[31m      error: [Function: socketOnError],[39m
+[31m      prefinish: undefined,[39m
+[31m      finish: undefined,[39m
+[31m      drain: [Function: bound socketOnDrain],[39m
+[31m      data: [Function: bound socketOnData],[39m
+[31m      end: [Array],[39m
+[31m      readable: undefined,[39m
+[31m      timeout: [Function: socketOnTimeout],[39m
+[31m      resume: [Function: onSocketResume],[39m
+[31m      pause: [Function: onSocketPause][39m
+[31m    },[39m
+[31m    _readableState: ReadableState {[39m
+[31m      highWaterMark: 16384,[39m
+[31m      buffer: [],[39m
+[31m      bufferIndex: 0,[39m
+[31m      length: 0,[39m
+[31m      pipes: [],[39m
+[31m      awaitDrainWriters: null,[39m
+[31m      [Symbol(kState)]: 193997060[39m
+[31m    },[39m
+[31m    _writableState: WritableState {[39m
+[31m      highWaterMark: 16384,[39m
+[31m      length: 0,[39m
+[31m      corked: 0,[39m
+[31m      onwrite: [Function: bound onwrite],[39m
+[31m      writelen: 0,[39m
+[31m      bufferedIndex: 0,[39m
+[31m      pendingcb: 0,[39m
+[31m      [Symbol(kState)]: 17563908,[39m
+[31m      [Symbol(kBufferedValue)]: null,[39m
+[31m      [Symbol(kWriteCbValue)]: [Function: bound onFinish],[39m
+[31m      [Symbol(kAfterWriteTickInfoValue)]: null[39m
+[31m    },[39m
+[31m    allowHalfOpen: true,[39m
+[31m    _maxListeners: undefined,[39m
+[31m    _eventsCount: 8,[39m
+[31m    _sockname: null,[39m
+[31m    _pendingData: null,[39m
+[31m    _pendingEncoding: '',[39m
+[31m    server: Server {[39m
+[31m      maxHeaderSize: undefined,[39m
+[31m      insecureHTTPParser: undefined,[39m
+[31m      requestTimeout: 300000,[39m
+[31m      headersTimeout: 60000,[39m
+[31m      keepAliveTimeout: 5000,[39m
+[31m      connectionsCheckingInterval: 30000,[39m
+[31m      requireHostHeader: true,[39m
+[31m      joinDuplicateHeaders: undefined,[39m
+[31m      rejectNonStandardBodyWrites: false,[39m
+[31m      _events: [Object: null prototype],[39m
+[31m      _eventsCount: 4,[39m
+[31m      _maxListeners: undefined,[39m
+[31m      _connections: 1,[39m
+[31m      _handle: [TCP],[39m
+[31m      _usingWorkers: false,[39m
+[31m      _workers: [],[39m
+[31m      _unref: false,[39m
+[31m      allowHalfOpen: true,[39m
+[31m      pauseOnConnect: false,[39m
+[31m      noDelay: true,[39m
+[31m      keepAlive: false,[39m
+[31m      keepAliveInitialDelay: 0,[39m
+[31m      highWaterMark: 16384,[39m
+[31m      httpAllowHalfOpen: false,[39m
+[31m      timeout: 0,[39m
+[31m      maxHeadersCount: null,[39m
+[31m      maxRequestsPerSocket: 0,[39m
+[31m      _connectionKey: '6::::3000',[39m
+[31m      [Symbol(IncomingMessage)]: [Function: IncomingMessage],[39m
+[31m      [Symbol(ServerResponse)]: [Function: ServerResponse],[39m
+[31m      [Symbol(shapeMode)]: false,[39m
+[31m      [Symbol(kCapture)]: false,[39m
+[31m      [Symbol(async_id_symbol)]: 22,[39m
+[31m      [Symbol(kUniqueHeaders)]: null,[39m
+[31m      [Symbol(http.server.connections)]: ConnectionsList {},[39m
+[31m      [Symbol(http.server.connectionsCheckingInterval)]: Timeout {[39m
+[31m        _idleTimeout: 30000,[39m
+[31m        _idlePrev: [TimersList],[39m
+[31m        _idleNext: [TimersList],[39m
+[31m        _idleStart: 808,[39m
+[31m        _onTimeout: [Function: bound checkConnections],[39m
+[31m        _timerArgs: undefined,[39m
+[31m        _repeat: 30000,[39m
+[31m        _destroyed: false,[39m
+[31m        [Symbol(refed)]: false,[39m
+[31m        [Symbol(kHasPrimitive)]: false,[39m
+[31m        [Symbol(asyncId)]: 25,[39m
+[31m        [Symbol(triggerId)]: 23[39m
+[31m      }[39m
+[31m    },[39m
+[31m    _server: Server {[39m
+[31m      maxHeaderSize: undefined,[39m
+[31m      insecureHTTPParser: undefined,[39m
+[31m      requestTimeout: 300000,[39m
+[31m      headersTimeout: 60000,[39m
+[31m      keepAliveTimeout: 5000,[39m
+[31m      connectionsCheckingInterval: 30000,[39m
+[31m      requireHostHeader: true,[39m
+[31m      joinDuplicateHeaders: undefined,[39m
+[31m      rejectNonStandardBodyWrites: false,[39m
+[31m      _events: [Object: null prototype],[39m
+[31m      _eventsCount: 4,[39m
+[31m      _maxListeners: undefined,[39m
+[31m      _connections: 1,[39m
+[31m      _handle: [TCP],[39m
+[31m      _usingWorkers: false,[39m
+[31m      _workers: [],[39m
+[31m      _unref: false,[39m
+[31m      allowHalfOpen: true,[39m
+[31m      pauseOnConnect: false,[39m
+[31m      noDelay: true,[39m
+[31m      keepAlive: false,[39m
+[31m      keepAliveInitialDelay: 0,[39m
+[31m      highWaterMark: 16384,[39m
+[31m      httpAllowHalfOpen: false,[39m
+[31m      timeout: 0,[39m
+[31m      maxHeadersCount: null,[39m
+[31m      maxRequestsPerSocket: 0,[39m
+[31m      _connectionKey: '6::::3000',[39m
+[31m      [Symbol(IncomingMessage)]: [Function: IncomingMessage],[39m
+[31m      [Symbol(ServerResponse)]: [Function: ServerResponse],[39m
+[31m      [Symbol(shapeMode)]: false,[39m
+[31m      [Symbol(kCapture)]: false,[39m
+[31m      [Symbol(async_id_symbol)]: 22,[39m
+[31m      [Symbol(kUniqueHeaders)]: null,[39m
+[31m      [Symbol(http.server.connections)]: ConnectionsList {},[39m
+[31m      [Symbol(http.server.connectionsCheckingInterval)]: Timeout {[39m
+[31m        _idleTimeout: 30000,[39m
+[31m        _idlePrev: [TimersList],[39m
+[31m        _idleNext: [TimersList],[39m
+[31m        _idleStart: 808,[39m
+[31m        _onTimeout: [Function: bound checkConnections],[39m
+[31m        _timerArgs: undefined,[39m
+[31m        _repeat: 30000,[39m
+[31m        _destroyed: false,[39m
+[31m        [Symbol(refed)]: false,[39m
+[31m        [Symbol(kHasPrimitive)]: false,[39m
+[31m        [Symbol(asyncId)]: 25,[39m
+[31m        [Symbol(triggerId)]: 23[39m
+[31m      }[39m
+[31m    },[39m
+[31m    parser: HTTPParser {[39m
+[31m      '0': null,[39m
+[31m      '1': [Function: parserOnHeaders],[39m
+[31m      '2': [Function: parserOnHeadersComplete],[39m
+[31m      '3': [Function: parserOnBody],[39m
+[31m      '4': [Function: parserOnMessageComplete],[39m
+[31m      '5': [Function: bound onParserExecute],[39m
+[31m      '6': [Function: bound onParserTimeout],[39m
+[31m      _headers: [],[39m
+[31m      _url: '',[39m
+[31m      socket: [Circular *1],[39m
+[31m      incoming: [IncomingMessage],[39m
+[31m      outgoing: null,[39m
+[31m      maxHeaderPairs: 2000,[39m
+[31m      _consumed: true,[39m
+[31m      onIncoming: [Function: bound parserOnIncoming],[39m
+[31m      joinDuplicateHeaders: null,[39m
+[31m      [Symbol(resource_symbol)]: [HTTPServerAsyncResource][39m
+[31m    },[39m
+[31m    on: [Function: socketListenerWrap],[39m
+[31m    addListener: [Function: socketListenerWrap],[39m
+[31m    prependListener: [Function: socketListenerWrap],[39m
+[31m    setEncoding: [Function: socketSetEncoding],[39m
+[31m    _paused: false,[39m
+[31m    _httpMessage: [Circular *2],[39m
+[31m    timeout: 0,[39m
+[31m    [Symbol(async_id_symbol)]: 160,[39m
+[31m    [Symbol(kHandle)]: TCP {[39m
+[31m      reading: true,[39m
+[31m      onconnection: null,[39m
+[31m      _consumed: true,[39m
+[31m      [Symbol(owner_symbol)]: [Circular *1][39m
+[31m    },[39m
+[31m    [Symbol(lastWriteQueueSize)]: 0,[39m
+[31m    [Symbol(timeout)]: Timeout {[39m
+[31m      _idleTimeout: -1,[39m
+[31m      _idlePrev: null,[39m
+[31m      _idleNext: null,[39m
+[31m      _idleStart: 1888,[39m
+[31m      _onTimeout: null,[39m
+[31m      _timerArgs: undefined,[39m
+[31m      _repeat: null,[39m
+[31m      _destroyed: true,[39m
+[31m      [Symbol(refed)]: false,[39m
+[31m      [Symbol(kHasPrimitive)]: false,[39m
+[31m      [Symbol(asyncId)]: 168,[39m
+[31m      [Symbol(triggerId)]: 164[39m
+[31m    },[39m
+[31m    [Symbol(kBuffer)]: null,[39m
+[31m    [Symbol(kBufferCb)]: null,[39m
+[31m    [Symbol(kBufferGen)]: null,[39m
+[31m    [Symbol(shapeMode)]: true,[39m
+[31m    [Symbol(kCapture)]: false,[39m
+[31m    [Symbol(kSetNoDelay)]: true,[39m
+[31m    [Symbol(kSetKeepAlive)]: false,[39m
+[31m    [Symbol(kSetKeepAliveInitialDelay)]: 0,[39m
+[31m    [Symbol(kBytesRead)]: 0,[39m
+[31m    [Symbol(kBytesWritten)]: 0[39m
+[31m  },[39m
+[31m  _header: null,[39m
+[31m  _keepAliveTimeout: 5000,[39m
+[31m  _onPendingData: [Function: bound updateOutgoingData],[39m
+[31m  req: IncomingMessage {[39m
+[31m    _events: {[39m
+[31m      close: undefined,[39m
+[31m      error: undefined,[39m
+[31m      data: undefined,[39m
+[31m      end: undefined,[39m
+[31m      readable: undefined,[39m
+[31m      aborted: undefined[39m
+[31m    },[39m
+[31m    _readableState: ReadableState {[39m
+[31m      highWaterMark: 16384,[39m
+[31m      buffer: [],[39m
+[31m      bufferIndex: 0,[39m
+[31m      length: 0,[39m
+[31m      pipes: [],[39m
+[31m      awaitDrainWriters: null,[39m
+[31m      [Symbol(kState)]: 60295036[39m
+[31m    },[39m
+[31m    _maxListeners: undefined,[39m
+[31m    socket: <ref *1> Socket {[39m
+[31m      connecting: false,[39m
+[31m      _hadError: false,[39m
+[31m      _parent: null,[39m
+[31m      _host: null,[39m
+[31m      _closeAfterHandlingError: false,[39m
+[31m      _events: [Object],[39m
+[31m      _readableState: [ReadableState],[39m
+[31m      _writableState: [WritableState],[39m
+[31m      allowHalfOpen: true,[39m
+[31m      _maxListeners: undefined,[39m
+[31m      _eventsCount: 8,[39m
+[31m      _sockname: null,[39m
+[31m      _pendingData: null,[39m
+[31m      _pendingEncoding: '',[39m
+[31m      server: [Server],[39m
+[31m      _server: [Server],[39m
+[31m      parser: [HTTPParser],[39m
+[31m      on: [Function: socketListenerWrap],[39m
+[31m      addListener: [Function: socketListenerWrap],[39m
+[31m      prependListener: [Function: socketListenerWrap],[39m
+[31m      setEncoding: [Function: socketSetEncoding],[39m
+[31m      _paused: false,[39m
+[31m      _httpMessage: [Circular *2],[39m
+[31m      timeout: 0,[39m
+[31m      [Symbol(async_id_symbol)]: 160,[39m
+[31m      [Symbol(kHandle)]: [TCP],[39m
+[31m      [Symbol(lastWriteQueueSize)]: 0,[39m
+[31m      [Symbol(timeout)]: Timeout {[39m
+[31m        _idleTimeout: -1,[39m
+[31m        _idlePrev: null,[39m
+[31m        _idleNext: null,[39m
+[31m        _idleStart: 1888,[39m
+[31m        _onTimeout: null,[39m
+[31m        _timerArgs: undefined,[39m
+[31m        _repeat: null,[39m
+[31m        _destroyed: true,[39m
+[31m        [Symbol(refed)]: false,[39m
+[31m        [Symbol(kHasPrimitive)]: false,[39m
+[31m        [Symbol(asyncId)]: 168,[39m
+[31m        [Symbol(triggerId)]: 164[39m
+[31m      },[39m
+[31m      [Symbol(kBuffer)]: null,[39m
+[31m      [Symbol(kBufferCb)]: null,[39m
+[31m      [Symbol(kBufferGen)]: null,[39m
+[31m      [Symbol(shapeMode)]: true,[39m
+[31m      [Symbol(kCapture)]: false,[39m
+[31m      [Symbol(kSetNoDelay)]: true,[39m
+[31m      [Symbol(kSetKeepAlive)]: false,[39m
+[31m      [Symbol(kSetKeepAliveInitialDelay)]: 0,[39m
+[31m      [Symbol(kBytesRead)]: 0,[39m
+[31m      [Symbol(kBytesWritten)]: 0[39m
+[31m    },[39m
+[31m    httpVersionMajor: 1,[39m
+[31m    httpVersionMinor: 1,[39m
+[31m    httpVersion: '1.1',[39m
+[31m    complete: true,[39m
+[31m    rawHeaders: [[39m
+[31m      'Host',[39m
+[31m      'localhost:3000',[39m
+[31m      'Connection',[39m
+[31m      'keep-alive',[39m
+[31m      'Content-Length',[39m
+[31m      '40',[39m
+[31m      'sec-ch-ua',[39m
+[31m      '"Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"',[39m
+[31m      'Accept',[39m
+[31m      'application/json, text/plain, */*',[39m
+[31m      'Content-Type',[39m
+[31m      'application/json',[39m
+[31m      'sec-ch-ua-mobile',[39m
+[31m      '?0',[39m
+[31m      'User-Agent',[39m
+[31m      'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',[39m
+[31m      'sec-ch-ua-platform',[39m
+[31m      '"Windows"',[39m
+[31m      'Origin',[39m
+[31m      'http://localhost:5173',[39m
+[31m      'Sec-Fetch-Site',[39m
+[31m      'same-site',[39m
+[31m      'Sec-Fetch-Mode',[39m
+[31m      'cors',[39m
+[31m      'Sec-Fetch-Dest',[39m
+[31m      'empty',[39m
+[31m      'Referer',[39m
+[31m      'http://localhost:5173/',[39m
+[31m      'Accept-Encoding',[39m
+[31m      'gzip, deflate, br, zstd',[39m
+[31m      'Accept-Language',[39m
+[31m      'en-US,en;q=0.9,id;q=0.8'[39m
+[31m    ],[39m
+[31m    rawTrailers: [],[39m
+[31m    joinDuplicateHeaders: null,[39m
+[31m    aborted: false,[39m
+[31m    upgrade: false,[39m
+[31m    url: '/signin',[39m
+[31m    method: 'POST',[39m
+[31m    statusCode: null,[39m
+[31m    statusMessage: null,[39m
+[31m    client: <ref *1> Socket {[39m
+[31m      connecting: false,[39m
+[31m      _hadError: false,[39m
+[31m      _parent: null,[39m
+[31m      _host: null,[39m
+[31m      _closeAfterHandlingError: false,[39m
+[31m      _events: [Object],[39m
+[31m      _readableState: [ReadableState],[39m
+[31m      _writableState: [WritableState],[39m
+[31m      allowHalfOpen: true,[39m
+[31m      _maxListeners: undefined,[39m
+[31m      _eventsCount: 8,[39m
+[31m      _sockname: null,[39m
+[31m      _pendingData: null,[39m
+[31m      _pendingEncoding: '',[39m
+[31m      server: [Server],[39m
+[31m      _server: [Server],[39m
+[31m      parser: [HTTPParser],[39m
+[31m      on: [Function: socketListenerWrap],[39m
+[31m      addListener: [Function: socketListenerWrap],[39m
+[31m      prependListener: [Function: socketListenerWrap],[39m
+[31m      setEncoding: [Function: socketSetEncoding],[39m
+[31m      _paused: false,[39m
+[31m      _httpMessage: [Circular *2],[39m
+[31m      timeout: 0,[39m
+[31m      [Symbol(async_id_symbol)]: 160,[39m
+[31m      [Symbol(kHandle)]: [TCP],[39m
+[31m      [Symbol(lastWriteQueueSize)]: 0,[39m
+[31m      [Symbol(timeout)]: Timeout {[39m
+[31m        _idleTimeout: -1,[39m
+[31m        _idlePrev: null,[39m
+[31m        _idleNext: null,[39m
+[31m        _idleStart: 1888,[39m
+[31m        _onTimeout: null,[39m
+[31m        _timerArgs: undefined,[39m
+[31m        _repeat: null,[39m
+[31m        _destroyed: true,[39m
+[31m        [Symbol(refed)]: false,[39m
+[31m        [Symbol(kHasPrimitive)]: false,[39m
+[31m        [Symbol(asyncId)]: 168,[39m
+[31m        [Symbol(triggerId)]: 164[39m
+[31m      },[39m
+[31m      [Symbol(kBuffer)]: null,[39m
+[31m      [Symbol(kBufferCb)]: null,[39m
+[31m      [Symbol(kBufferGen)]: null,[39m
+[31m      [Symbol(shapeMode)]: true,[39m
+[31m      [Symbol(kCapture)]: false,[39m
+[31m      [Symbol(kSetNoDelay)]: true,[39m
+[31m      [Symbol(kSetKeepAlive)]: false,[39m
+[31m      [Symbol(kSetKeepAliveInitialDelay)]: 0,[39m
+[31m      [Symbol(kBytesRead)]: 0,[39m
+[31m      [Symbol(kBytesWritten)]: 0[39m
+[31m    },[39m
+[31m    _consuming: true,[39m
+[31m    _dumped: false,[39m
+[31m    next: [Function: next],[39m
+[31m    baseUrl: '/admin',[39m
+[31m    originalUrl: '/admin/signin',[39m
+[31m    _parsedUrl: Url {[39m
+[31m      protocol: null,[39m
+[31m      slashes: null,[39m
+[31m      auth: null,[39m
+[31m      host: null,[39m
+[31m      port: null,[39m
+[31m      hostname: null,[39m
+[31m      hash: null,[39m
+[31m      search: null,[39m
+[31m      query: null,[39m
+[31m      pathname: '/signin',[39m
+[31m      path: '/signin',[39m
+[31m      href: '/signin',[39m
+[31m      _raw: '/signin'[39m
+[31m    },[39m
+[31m    params: {},[39m
+[31m    query: {},[39m
+[31m    res: [Circular *2],[39m
+[31m    body: { username: '', email: '', password: '' },[39m
+[31m    _body: true,[39m
+[31m    length: undefined,[39m
+[31m    _eventsCount: 0,[39m
+[31m    route: Route { path: '/signin', stack: [Array], methods: [Object] },[39m
+[31m    'express-validator#contexts': [ [Context] ],[39m
+[31m    [Symbol(shapeMode)]: true,[39m
+[31m    [Symbol(kCapture)]: false,[39m
+[31m    [Symbol(kHeaders)]: {[39m
+[31m      host: 'localhost:3000',[39m
+[31m      connection: 'keep-alive',[39m
+[31m      'content-length': '40',[39m
+[31m      'sec-ch-ua': '"Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"',[39m
+[31m      accept: 'application/json, text/plain, */*',[39m
+[31m      'content-type': 'application/json',[39m
+[31m      'sec-ch-ua-mobile': '?0',[39m
+[31m      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',[39m
+[31m      'sec-ch-ua-platform': '"Windows"',[39m
+[31m      origin: 'http://localhost:5173',[39m
+[31m      'sec-fetch-site': 'same-site',[39m
+[31m      'sec-fetch-mode': 'cors',[39m
+[31m      'sec-fetch-dest': 'empty',[39m
+[31m      referer: 'http://localhost:5173/',[39m
+[31m      'accept-encoding': 'gzip, deflate, br, zstd',[39m
+[31m      'accept-language': 'en-US,en;q=0.9,id;q=0.8'[39m
+[31m    },[39m
+[31m    [Symbol(kHeadersCount)]: 32,[39m
+[31m    [Symbol(kTrailers)]: null,[39m
+[31m    [Symbol(kTrailersCount)]: 0[39m
+[31m  },[39m
+[31m  _sent100: false,[39m
+[31m  _expect_continue: false,[39m
+[31m  _maxRequestsPerSocket: 0,[39m
+[31m  locals: [Object: null prototype] {},[39m
+[31m  [Symbol(shapeMode)]: false,[39m
+[31m  [Symbol(kCapture)]: false,[39m
+[31m  [Symbol(kBytesWritten)]: 0,[39m
+[31m  [Symbol(kNeedDrain)]: false,[39m
+[31m  [Symbol(corked)]: 0,[39m
+[31m  [Symbol(kOutHeaders)]: [Object: null prototype] {[39m
+[31m    'x-powered-by': [ 'X-Powered-By', 'Express' ],[39m
+[31m    'access-control-allow-origin': [ 'Access-Control-Allow-Origin', '*' ][39m
+[31m  },[39m
+[31m  [Symbol(errored)]: null,[39m
+[31m  [Symbol(kHighWaterMark)]: 16384,[39m
+[31m  [Symbol(kRejectNonStandardBodyWrites)]: false,[39m
+[31m  [Symbol(kUniqueHeaders)]: null[39m
+[31m}[39m
+2024-05-16 18:20:18:2018 [31merror[39m: [31mEmail tidak terdaftar.[39m
+2024-05-16 18:20:24:2024 [31merror[39m: [31mEmail tidak terdaftar.[39m
+2024-05-16 18:20:31:2031 [31merror[39m: [31mEmail tidak terdaftar.[39m
+2024-05-16 18:20:37:2037 [31merror[39m: [31mEmail tidak terdaftar.[39m
+2024-05-16 18:22:49:2249 [31merror[39m: [31mEmail tidak terdaftar.[39m
+2024-05-16 19:06:17:617 [31merror[39m: [31mE11000 duplicate key error collection: laundryv3.customers index: code_1 dup key: { code: "CUS-001" }[39m
+2024-05-16 19:06:30:630 [31merror[39m: [31mFailed to send WhatsApp message: The 'To' number whatsapp:undefined is not a valid phone number.[39m
+2024-05-16 19:06:30:630 [31merror[39m: [31mThe 'To' number whatsapp:undefined is not a valid phone number.[39m
+2024-05-16 19:06:32:632 [31merror[39m: [31mFailed to send WhatsApp message: The 'To' number whatsapp:undefined is not a valid phone number.[39m
+2024-05-16 19:06:32:632 [31merror[39m: [31mThe 'To' number whatsapp:undefined is not a valid phone number.[39m
+2024-05-16 19:10:31:1031 [31merror[39m: [31mFailed to send WhatsApp message: Twilio could not find a Channel with the specified From address[39m
+2024-05-16 19:10:31:1031 [31merror[39m: [31mTwilio could not find a Channel with the specified From address[39m
+2024-05-16 19:12:44:1244 [31merror[39m: [31mFailed to send WhatsApp message: Twilio could not find a Channel with the specified From address[39m
+2024-05-16 19:12:44:1244 [31merror[39m: [31mTwilio could not find a Channel with the specified From address[39m
+2024-05-16 19:13:38:1338 [31merror[39m: [31mFailed to send WhatsApp message: Twilio could not find a Channel with the specified From address[39m
+2024-05-16 19:13:38:1338 [31merror[39m: [31mTwilio could not find a Channel with the specified From address[39m
+2024-05-16 19:28:56:2856 [31merror[39m: [31mE11000 duplicate key error collection: laundryv3.transactions index: code_1 dup key: { code: "TRX-007" }[39m
+2024-05-16 19:30:55:3055 [31merror[39m: [31mE11000 duplicate key error collection: laundryv3.transactions index: code_1 dup key: { code: "TRX-008" }[39m
+2024-05-16 19:34:52:3452 [31merror[39m: [31mCannot read properties of undefined (reading 'service')[39m
+2024-05-16 19:34:54:3454 [31merror[39m: [31mCannot read properties of undefined (reading 'service')[39m
+2024-05-16 19:38:56:3856 [31merror[39m: [31mmoment is not defined[39m
+2024-05-16 19:38:57:3857 [31merror[39m: [31mmoment is not defined[39m
+2024-05-16 19:43:46:4346 [31merror[39m: [31morderCode is not defined[39m
+2024-05-16 19:43:48:4348 [31merror[39m: [31morderCode is not defined[39m
+2024-05-16 19:44:16:4416 [31merror[39m: [31mE11000 duplicate key error collection: laundryv3.transactions index: code_1 dup key: { code: "TRX-015" }[39m
